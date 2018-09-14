@@ -1,0 +1,765 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%Title: 58. C:\ANDREJ\CONFER\GD\GD.99\TEKM\B\Bb_plane.net (64)
+%%Creator: Pajek: http://vlado.fmf.uni-lj.si/pub/networks/pajek/
+%%CreationDate: 09-10-1999, 9:10:57 PM
+%%BoundingBox: 0 0 1032 748
+%
+%!PS
+% Color Dictionary / adapted from color.pro
+% Graph Dictionary / drawing graphs
+% --------------------------------------------
+% Vladimir Batagelj
+% version 0: 27 mar 1994 experimental version
+% version 1: 12 nov 1994 basic set (color, a, e, ... )
+% version 2: 25 dec 1994 extensions
+% version 3:  5 jan 1995 arct/arcto - level2/level1 --> *arct
+% version 4: 12 jan 1995 ce, empty
+% version  : 28 dec 1997 pajkec, tri
+%
+
+/ColorDict 150 dict def
+
+ColorDict begin
+ /B {bind def} def
+ /GreenYellow   {0.15 0    0.69 0    }def
+ /Yellow        {0    0    1    0    }def
+ /Goldenrod     {0    0.10 0.84 0    }def
+ /Dandelion     {0    0.29 0.84 0    }def
+ /Apricot       {0    0.32 0.52 0    }def
+ /Peach         {0    0.50 0.70 0    }def
+ /Melon         {0    0.46 0.50 0    }def
+ /YellowOrange  {0    0.42 1    0    }def
+ /Orange        {0    0.61 0.87 0    }def
+ /BurntOrange   {0    0.51 1    0    }def
+ /Bittersweet   {0    0.75 1    0.24 }def
+ /RedOrange     {0    0.77 0.87 0    }def
+ /Mahogany      {0    0.85 0.87 0.35 }def
+ /Maroon        {0    0.87 0.68 0.32 }def
+ /BrickRed      {0    0.89 0.94 0.28 }def
+ /Red           {0    1    1    0    }def
+ /OrangeRed     {0    1    0.50 0    }def
+ /RubineRed     {0    1    0.13 0    }def
+ /WildStrawberry{0    0.96 0.39 0    }def
+ /Salmon        {0    0.53 0.38 0    }def
+ /CarnationPink {0    0.63 0    0    }def
+ /Magenta       {0    1    0    0    }def
+ /VioletRed     {0    0.81 0    0    }def
+ /Rhodamine     {0    0.82 0    0    }def
+ /Mulberry      {0.34 0.90 0    0.02 }def
+ /RedViolet     {0.07 0.90 0    0.34 }def
+ /Fuchsia       {0.47 0.91 0    0.08 }def
+ /Lavender      {0    0.48 0    0    }def
+ /Thistle       {0.12 0.59 0    0    }def
+ /Orchid        {0.32 0.64 0    0    }def
+ /DarkOrchid    {0.40 0.80 0.20 0    }def
+ /Purple        {0.45 0.86 0    0    }def
+ /Plum          {0.50 1    0    0    }def
+ /Violet        {0.79 0.88 0    0    }def
+ /RoyalPurple   {0.75 0.90 0    0    }def
+ /BlueViolet    {0.86 0.91 0    0.04 }def
+ /Periwinkle    {0.57 0.55 0    0    }def
+ /CadetBlue     {0.62 0.57 0.23 0    }def
+ /CornflowerBlue{0.65 0.13 0    0    }def
+ /MidnightBlue  {0.98 0.13 0    0.43 }def
+ /NavyBlue      {0.94 0.54 0    0    }def
+ /RoyalBlue     {1    0.50 0    0    }def
+ /Blue          {1    1    0    0    }def
+ /Cerulean      {0.94 0.11 0    0    }def
+ /Cyan          {1    0    0    0    }def
+ /ProcessBlue   {0.96 0    0    0    }def
+ /SkyBlue       {0.62 0    0.12 0    }def
+ /Turquoise     {0.85 0    0.20 0    }def
+ /TealBlue      {0.86 0    0.34 0.02 }def
+ /Aquamarine    {0.82 0    0.30 0    }def
+ /BlueGreen     {0.85 0    0.33 0    }def
+ /Emerald       {1    0    0.50 0    }def
+ /JungleGreen   {0.99 0    0.52 0    }def
+ /SeaGreen      {0.69 0    0.50 0    }def
+ /Green         {1    0    1    0    }def
+ /ForestGreen   {0.91 0    0.88 0.12 }def
+ /PineGreen     {0.92 0    0.59 0.25 }def
+ /LimeGreen     {0.50 0    1    0    }def
+ /YellowGreen   {0.44 0    0.74 0    }def
+ /SpringGreen   {0.26 0    0.76 0    }def
+ /OliveGreen    {0.64 0    0.95 0.40 }def
+ /RawSienna     {0 0.72    1    0.45 }def
+ /Sepia         {0 0.83    1    0.70 }def
+ /Brown         {0 0.81    1    0.60 }def
+ /Tan           {0.14 0.42 0.56 0    }def
+ /Gray          {0    0    0    0.50 }def
+ /Black         {0    0    0    1    }def
+ /White         {0    0    0    0    }def
+ /LightYellow   {0    0    0.4  0    }def
+ /LightCyan     {0.2  0    0    0    }def
+ /LightMagenta  {0    0.2  0    0    }def
+ /LightPurple   {0.2  0.2  0    0    }def
+ /LightGreen    {0.2  0    0.3  0    }def
+ /LightOrange   {0    0.2  0.3  0    }def
+ /Canary        {0    0    0.50 0    }def  
+ /LFadedGreen   {0.10 0    0.20 0    }def
+ /Pink          {0    0.15 0.05 0    }def  
+ /LSkyBlue      {0.15 0.05 0    0    }def
+end
+
+/GraphPic 50 dict def
+
+GraphPic begin
+% level1/level2
+  /arct* {arcto 4 {pop} repeat} bind def
+
+  /languagelevel where
+    {pop languagelevel}{1} ifelse
+  2 lt {
+    /*arct /arct* load def
+  }{
+    /*arct /arct load def
+  } ifelse
+
+% Parameters
+  /fos 15 def          % font size
+  /h  9 def            % arrow height
+  /d 10 def            % arrow depth
+  /o  5 def            % arrow width
+  /ic { White } def    % interior color (fill)
+  /bc { Black } def    % boundary color
+  /bw { 1 } def        % boundary width
+  /r  { 5 } def        % oval radius
+  /q  { 0.5 } def      % hexagon
+  /setFontSize { /fos exch def } def
+  /setArrHeight { /h exch def } def
+  /setArrDepth { /d exch def } def
+  /setArrWidth { /o exch def } def
+% Dash Patterns
+  /Solid { [ ] 0 } def
+  /Dashed { [4 3] 2 } def
+  /Dots { [3 6] 2 } def
+  /c {setcmykcolor} def
+% labels
+  /l { % text angle x y
+    gsave moveto rotate c show grestore } def
+  /cl { % text angle x y
+    gsave moveto rotate c dup stringwidth exch 2 div neg exch fos add
+    2.5 div neg rmoveto show grestore } def
+% arrows
+  /arrowA { newpath -10 0 moveto 15 h lineto d 0 lineto 15 h neg lineto
+    closepath gsave fill grestore 0 setlinejoin 0.1 setlinewidth stroke } def
+  /arrowB { /Bl { h h mul 625 add sqrt } bind def /Bd { -10 o Bl mul h div
+    add} bind def /Bg { h o Bl mul 25 div sub } bind def newpath 15 h moveto
+    -10 0 lineto 15 h neg lineto 15 Bg neg lineto Bd 0 lineto 15 Bg lineto
+    closepath gsave fill grestore 0 setlinejoin 0.1 setlinewidth Solid
+    setdash stroke } def
+  /ArrowA {  % size alpha x y
+    gsave translate pop rotate 0.2 mul dup scale arrowA grestore } def
+  /ArrowB {  %   alpha x y
+    gsave translate pop rotate 0.2 mul dup scale arrowB grestore } def
+% vertex
+  /v { % bndcolor w intcolor x y radius
+    0 360 arc gsave c fill grestore setlinewidth c stroke } def
+% edge
+  /e { % width color dashpat u1 v1 u2 v2 x2 y2 x1 y1
+    moveto curveto setdash c setlinewidth stroke } def
+% oval edge
+  /oe { % width color dashpat r u1 v1 x2 y2 x1 y1
+    moveto 2 copy 7 1 roll 7 1 roll 5 -1 roll *arct
+    lineto setdash c setlinewidth stroke } def
+% circular edge
+  /ce { % width color dashpat x y r a1 a2
+    arc setdash c setlinewidth stroke } def
+% straight edge
+  /se { % width color dashpat x2 y2 x1 y1
+    moveto lineto setdash c setlinewidth stroke } def
+% double edge
+  /de { % width color dashpat x2 y2 x1 y1
+    moveto lineto setdash c /q_a exch def
+    gsave q_a 5.5 mul setlinewidth stroke grestore
+    White c q_a 3 mul setlinewidth stroke} def
+% arc
+  /a { % arrow size angle width color dashpat u1 v1 u2 v2 x2 y2 x1 y1
+    moveto curveto setdash c dup setlinewidth currentpoint 6 -1 roll
+    cvx exec stroke } def
+% straight arc
+  /sa { % arrow size angle width color dashpat x2 y2 x1 y1
+    moveto lineto setdash c dup setlinewidth currentpoint 6 -1 roll
+    cvx exec stroke } def
+% circle
+  /circle {
+    0 0 10 0 360 arc gsave ic c fill grestore bw setlinewidth
+    bc c stroke } def
+% square
+  /square { -10 -10 moveto 0 20 rlineto 20 0 rlineto 0 -20 rlineto
+    -20 0 rlineto gsave ic c fill grestore bw setlinewidth bc c stroke } def
+% cross
+  /cross { 0 -10 moveto 0 20 rlineto -10 0 moveto 20 0 rlineto
+     bw setlinewidth bc c stroke } def
+% box
+  /box { % a b
+    /q_b exch def /q_a exch def newpath 0 q_b moveto q_a neg q_b q_a neg 0 r
+    *arct q_a neg q_b neg  0 q_b neg  r  *arct q_a q_b neg  q_a 0  r  *arct
+    q_a q_b  0 q_b  r  *arct closepath gsave ic c fill
+    grestore bw setlinewidth bc c stroke } def
+% triangle
+  /tria { %
+    /d_b exch def /d_a exch def 
+    /q_b {0.5 d_b mul} def /q_a {0.5 d_a mul} def
+    newpath 
+    q_a neg q_b neg moveto q_a q_b neg lineto 0 q_b lineto
+    closepath gsave ic c fill
+    grestore 
+    bw setlinewidth bc c stroke } def
+% diamond
+  /diamond { % a b
+    /d_b exch def /d_a exch def /d_c {d_a q mul} def
+    newpath 0 d_b moveto d_c neg d_b  d_a neg 0  r  *arct
+    d_a neg 0 d_c neg d_b neg r *arct d_c neg d_b neg d_c d_b neg r *arct
+    d_c d_b neg d_a 0 r *arct d_a 0 d_c d_b r *arct d_c d_b 0 d_b r *arct
+    closepath gsave ic c fill grestore bw setlinewidth
+    bc c stroke } def
+% ellipse
+  /ellipse { % a b
+    /q_b exch def /q_a exch def newpath /m matrix currentmatrix def
+    q_a q_b scale 0 0 1 0 360 arc closepath m setmatrix gsave ic c fill
+    grestore bw setlinewidth bc c stroke } def
+% helicopter
+  /helicopter{ ic c 16 6 false [16 0 0 6 0 0]
+      {<dd ff 00 ff 54 1f 80 03 fb f9 00 1e>} imagemask} def
+% empty
+  /empty { } def
+% figure scaled:   x_size y_size phi x y  fs
+  /fs { gsave translate rotate scale cvx exec grestore } def
+% figure absolute: x_size y_size phi x y  fa
+  /fa { gsave translate rotate 3 -1 roll cvx exec grestore } def
+end
+
+% Straight Arc: type size angle width color pattern x2 y2 x1 y1 sa
+% Bezier Arc: type size angle width color pattern u1 v1 u2 v2 x2 y2 x1 y1 a
+% Straight Edge: width color pattern x2 y2 x1 y1 se
+% Bezier Edge: width color pattern u1 v1 u2 v2 x2 y2 x1 y1 e
+% Vertex: colorbnd widthbnd colorinside x y r v
+% Label: (label) color angle x y cl
+%
+ColorDict begin GraphPic begin
+%
+/fos     15.00  def 
+/Helvetica fos  selectfont
+% Arc:    19   21
+/ArrowA     1.00  155.00    1.00 Green Solid   480.15  379.85  544.41  381.22  556.96  375.37  467.60  374.00     a
+% Edge:     2    3
+    1.50 Blue Solid   319.82  168.60  516.00  181.09    se
+% Edge:     1    3
+    1.50 Blue Solid   319.82  168.60  358.72  117.81    se
+% Edge:     5    6
+    1.50 Blue Solid   477.20  231.81  712.18  295.09    se
+% Edge:     4    6
+    1.50 Blue Solid   477.20  231.81  554.80  231.81    se
+% Edge:     6    7
+    1.50 Blue Solid   428.69  196.72  477.20  231.81    se
+% Edge:     3    7
+    1.50 Blue Solid   428.69  196.72  319.82  168.60    se
+% Edge:     9   10
+    1.50 Blue Solid   516.00  282.59  603.31  323.29    se
+% Edge:     8   10
+    1.50 Blue Solid   516.00  282.59  446.03  260.00    se
+% Edge:    12   13
+    1.50 Blue Solid   673.28  345.88  799.39  437.28    se
+% Edge:    11   13
+    1.50 Blue Solid   673.28  345.88  642.11  374.00    se
+% Edge:    13   14
+    1.50 Blue Solid   585.97  260.00  673.28  345.88    se
+% Edge:    10   14
+    1.50 Blue Solid   585.97  260.00  516.00  282.59    se
+% Edge:    14   15
+    1.50 Blue Solid   603.31  196.72  585.97  260.00    se
+% Edge:     7   15
+    1.50 Blue Solid   603.31  196.72  428.69  196.72    se
+% Edge:    17   18
+    1.50 Blue Solid   407.12  310.72  428.69  323.29    se
+% Edge:    16   18
+    1.50 Blue Solid   407.12  310.72  271.42  260.00    se
+% Edge:    20   21
+    1.50 Blue Solid   564.40  374.00  624.88  437.28    se
+% Edge:    19   21
+    1.50 Blue Solid   481.24  369.03  550.76  369.03  564.40  374.00  467.60  374.00     e
+% Edge:    21   22
+    1.50 Blue Solid   624.88  310.72  564.40  374.00    se
+% Edge:    18   22
+    1.50 Blue Solid   624.88  310.72  407.12  310.72    se
+% Edge:    24   25
+    1.50 Blue Solid   603.31  424.71  516.00  465.41    se
+% Edge:    23   25
+    1.50 Blue Solid   603.31  424.71  358.72  402.12    se
+% Edge:    27   28
+    1.50 Blue Solid   760.58  488.00  712.18  579.40    se
+% Edge:    26   28
+    1.50 Blue Solid   760.58  488.00  554.80  516.19    se
+% Edge:    28   29
+    1.50 Blue Solid   782.15  374.00  760.58  488.00    se
+% Edge:    25   29
+    1.50 Blue Solid   782.15  374.00  603.31  424.71    se
+% Edge:    29   30
+    1.50 Blue Solid   760.58  260.00  782.15  374.00    se
+% Edge:    22   30
+    1.50 Blue Solid   760.58  260.00  624.88  310.72    se
+% Edge:    30   31
+    1.50 Blue Solid   712.18  168.60  760.58  260.00    se
+% Edge:    15   31
+    1.50 Blue Solid   712.18  168.60  603.31  196.72    se
+% Edge:     2   32
+    1.50 Green Solid   162.54  231.81  516.00  181.09    se
+% Edge:     1   32
+    1.50 Green Solid   162.54  231.81  358.72  117.81    se
+% Edge:     5   33
+    1.50 Green Solid   319.82  295.09  712.18  295.09    se
+% Edge:     4   33
+    1.50 Green Solid   319.82  295.09  554.80  231.81    se
+% Edge:    33   34
+    1.50 Blue Solid   232.61  310.72  319.82  295.09    se
+% Edge:    32   34
+    1.50 Blue Solid   232.61  310.72  162.54  231.81    se
+% Edge:     9   35
+    1.50 Green Solid   358.72  345.88  603.31  323.29    se
+% Edge:     8   35
+    1.50 Green Solid   358.72  345.88  446.03  260.00    se
+% Edge:    11   36
+    1.50 Green Solid   516.00  409.08  642.11  374.00    se
+% Edge:    12   36
+    1.50 Green Solid   516.00  409.08  799.39  437.28    se
+% Edge:    36   37
+    1.50 Blue Solid   389.89  374.00  516.00  409.08    se
+% Edge:    35   37
+    1.50 Blue Solid   389.89  374.00  358.72  345.88    se
+% Edge:    37   38
+    1.50 Blue Solid   516.00  338.92  389.89  374.00    se
+% Edge:    34   38
+    1.50 Blue Solid   516.00  338.92  232.61  310.72    se
+% Edge:    17   39
+    1.50 Green Solid   249.85  374.00  428.69  323.29    se
+% Edge:    16   39
+    1.50 Green Solid   249.85  374.00  271.42  260.00    se
+% Edge:    20   40
+    1.50 Green Solid   407.12  437.28  624.88  437.28    se
+% Edge:    19   40
+    1.50 Green Solid   407.12  437.28  467.60  374.00    se
+% Edge:    40   41
+    1.50 Blue Solid   428.69  424.71  407.12  437.28    se
+% Edge:    39   41
+    1.50 Blue Solid   428.69  424.71  249.85  374.00    se
+% Edge:    24   42
+    1.50 Green Solid   446.03  488.00  516.00  465.41    se
+% Edge:    23   42
+    1.50 Green Solid   446.03  488.00  358.72  402.12    se
+% Edge:    27   43
+    1.50 Green Solid   603.31  551.28  712.18  579.40    se
+% Edge:    26   43
+    1.50 Green Solid   603.31  551.28  554.80  516.19    se
+% Edge:    43   44
+    1.50 Blue Solid   585.97  488.00  603.31  551.28    se
+% Edge:    42   44
+    1.50 Blue Solid   585.97  488.00  446.03  488.00    se
+% Edge:    44   45
+    1.50 Blue Solid   673.28  402.12  585.97  488.00    se
+% Edge:    41   45
+    1.50 Blue Solid   673.28  402.12  428.69  424.71    se
+% Edge:    45   46
+    1.50 Blue Solid   799.39  310.72  673.28  402.12    se
+% Edge:    38   46
+    1.50 Blue Solid   799.39  310.72  516.00  338.92    se
+% Edge:    33   47
+    1.50 Green Solid    75.23  374.00  319.82  295.09    se
+% Edge:    32   47
+    1.50 Green Solid    75.23  374.00  162.54  231.81    se
+% Edge:    36   48
+    1.50 Green Solid   232.61  437.28  516.00  409.08    se
+% Edge:    35   48
+    1.50 Green Solid   232.61  437.28  358.72  345.88    se
+% Edge:    48   49
+    1.50 Blue Solid   319.82  452.91  232.61  437.28    se
+% Edge:    47   49
+    1.50 Blue Solid   319.82  452.91   75.23  374.00    se
+% Edge:    40   50
+    1.50 Green Solid   271.42  488.00  407.12  437.28    se
+% Edge:    39   50
+    1.50 Green Solid   271.42  488.00  249.85  374.00    se
+% Edge:    43   51
+    1.50 Green Solid   428.69  551.28  603.31  551.28    se
+% Edge:    42   51
+    1.50 Green Solid   428.69  551.28  446.03  488.00    se
+% Edge:    51   52
+    1.50 Blue Solid   477.20  516.19  428.69  551.28    se
+% Edge:    50   52
+    1.50 Blue Solid   477.20  516.19  271.42  488.00    se
+% Edge:    52   53
+    1.50 Blue Solid   712.18  452.91  477.20  516.19    se
+% Edge:    49   53
+    1.50 Blue Solid   712.18  452.91  319.82  452.91    se
+% Edge:    48   54
+    1.50 Green Solid   162.54  516.19  232.61  437.28    se
+% Edge:    47   54
+    1.50 Green Solid   162.54  516.19   75.23  374.00    se
+% Edge:    51   55
+    1.50 Green Solid   319.82  579.40  428.69  551.28    se
+% Edge:    50   55
+    1.50 Green Solid   319.82  579.40  271.42  488.00    se
+% Edge:    55   56
+    1.50 Blue Solid   516.00  566.91  319.82  579.40    se
+% Edge:    54   56
+    1.50 Blue Solid   516.00  566.91  162.54  516.19    se
+% Edge:    55   57
+    1.50 Green Solid   358.72  630.19  319.82  579.40    se
+% Edge:    54   57
+    1.50 Green Solid   358.72  630.19  162.54  516.19    se
+% Edge:    57   58
+    1.50 Green Solid   516.00  693.47  358.72  630.19    se
+% Edge:    58   59
+    1.50 Blue Solid   673.28  630.19  516.00  693.47    se
+% Edge:    57   59
+    1.50 Blue Solid   673.28  630.19  358.72  630.19    se
+% Edge:    59   60
+    1.50 Blue Solid   869.46  516.19  673.28  630.19    se
+% Edge:    56   60
+    1.50 Blue Solid   869.46  516.19  516.00  566.91    se
+% Edge:    60   61
+    1.50 Blue Solid   956.77  374.00  869.46  516.19    se
+% Edge:    53   61
+    1.50 Blue Solid   956.77  374.00  712.18  452.91    se
+% Edge:    61   62
+    1.50 Blue Solid   869.46  231.81  956.77  374.00    se
+% Edge:    46   62
+    1.50 Blue Solid   869.46  231.81  799.39  310.72    se
+% Edge:    62   63
+    1.50 Blue Solid   673.28  117.81  869.46  231.81    se
+% Edge:    31   63
+    1.50 Blue Solid   673.28  117.81  712.18  168.60    se
+% Edge:    63   64
+    1.50 Blue Solid   516.00   54.53  673.28  117.81    se
+% Edge:    27   56
+    1.50 Green Solid   516.00  566.91  712.18  579.40    se
+% Edge:    26   52
+    1.50 Green Solid   477.20  516.19  554.80  516.19    se
+% Edge:    26   49
+    1.50 Green Solid   319.82  452.91  554.80  516.19    se
+% Edge:    24   44
+    1.50 Green Solid   585.97  488.00  516.00  465.41    se
+% Edge:    24   41
+    1.50 Green Solid   428.69  424.71  516.00  465.41    se
+% Edge:    23   37
+    1.50 Green Solid   389.89  374.00  358.72  402.12    se
+% Edge:    23   34
+    1.50 Green Solid   232.61  310.72  358.72  402.12    se
+% Edge:    20   28
+    1.50 Green Solid   760.58  488.00  624.88  437.28    se
+% Edge:    20   25
+    1.50 Green Solid   603.31  424.71  624.88  437.28    se
+% Edge:    18   19
+    1.50 Green Solid   467.60  374.00  407.12  310.72    se
+% Edge:    13   17
+    1.50 Green Solid   428.69  323.29  673.28  345.88    se
+% Edge:    10   17
+    1.50 Green Solid   428.69  323.29  516.00  282.59    se
+% Edge:     6   16
+    1.50 Green Solid   271.42  260.00  477.20  231.81    se
+% Edge:     3   16
+    1.50 Green Solid   271.42  260.00  319.82  168.60    se
+% Edge:    12   60
+    1.50 Green Solid   869.46  516.19  799.39  437.28    se
+% Edge:    12   53
+    1.50 Green Solid   712.18  452.91  799.39  437.28    se
+% Edge:    11   45
+    1.50 Green Solid   673.28  402.12  642.11  374.00    se
+% Edge:    11   38
+    1.50 Green Solid   516.00  338.92  642.11  374.00    se
+% Edge:     9   29
+    1.50 Green Solid   782.15  374.00  603.31  323.29    se
+% Edge:     9   22
+    1.50 Green Solid   624.88  310.72  603.31  323.29    se
+% Edge:     8   14
+    1.50 Green Solid   585.97  260.00  446.03  260.00    se
+% Edge:     7    8
+    1.50 Green Solid   446.03  260.00  428.69  196.72    se
+% Edge:     5   61
+    1.50 Green Solid   956.77  374.00  712.18  295.09    se
+% Edge:     5   46
+    1.50 Green Solid   799.39  310.72  712.18  295.09    se
+% Edge:     4   30
+    1.50 Green Solid   760.58  260.00  554.80  231.81    se
+% Edge:     4   15
+    1.50 Green Solid   603.31  196.72  554.80  231.81    se
+% Edge:     2   62
+    1.50 Green Solid   869.46  231.81  516.00  181.09    se
+% Edge:     2   31
+    1.50 Green Solid   712.18  168.60  516.00  181.09    se
+% Edge:     1   63
+    1.50 Green Solid   673.28  117.81  358.72  117.81    se
+% Edge:     1   64
+    1.50 Green Solid   516.00   54.53  358.72  117.81    se
+% Edge:    27   59
+    1.50 Green Solid   673.28  630.19  712.18  579.40    se
+% Edge:    64   64
+    1.50 Blue Solid   569.03    1.50  462.97    1.50  516.00   54.53  516.00   54.53     e
+% Edge:    58   58
+    1.50 Green Solid   569.03  746.50  462.97  746.50  516.00  693.47  516.00  693.47     e
+% Change to Solid line
+Solid setdash
+/ic { Black } def 
+/bc { Black } def 
+/bw {     0.50 } def 
+/r {     0.00 } def 
+/q {     0.00 } def 
+/fos     10.00  def 
+/Helvetica fos  selectfont
+% Vertex:     1
+/ellipse    4.50    4.50    0.00  358.72  117.81 fa
+% Label:     1
+(15070) Black     0.00  361.57  107.18     l
+% Vertex:     2
+/ellipse    4.50    4.50    0.00  516.00  181.09 fa
+% Label:     2
+(15073) Black     0.00  518.85  170.47     l
+% Vertex:     3
+/ellipse    4.50    4.50    0.00  319.82  168.60 fa
+% Label:     3
+(15076) Black     0.00  322.66  157.97     l
+% Vertex:     4
+/ellipse    4.50    4.50    0.00  554.80  231.81 fa
+% Label:     4
+(15079) Black     0.00  557.65  221.18     l
+% Vertex:     5
+/ellipse    4.50    4.50    0.00  712.18  295.09 fa
+% Label:     5
+(15082) Black     0.00  715.03  284.46     l
+% Vertex:     6
+/ellipse    4.50    4.50    0.00  477.20  231.81 fa
+% Label:     6
+(15085) Black     0.00  480.04  221.18     l
+% Vertex:     7
+/ellipse    4.50    4.50    0.00  428.69  196.72 fa
+% Label:     7
+(15088) Black     0.00  431.54  186.10     l
+% Vertex:     8
+/ellipse    4.50    4.50    0.00  446.03  260.00 fa
+% Label:     8
+(15091) Black     0.00  448.88  249.38     l
+% Vertex:     9
+/ellipse    4.50    4.50    0.00  603.31  323.29 fa
+% Label:     9
+(15094) Black     0.00  606.15  312.66     l
+% Vertex:    10
+/ellipse    4.50    4.50    0.00  516.00  282.59 fa
+% Label:    10
+(15097) Black     0.00  518.85  271.97     l
+% Vertex:    11
+/ellipse    4.50    4.50    0.00  642.11  374.00 fa
+% Label:    11
+(15100) Black     0.00  644.96  363.37     l
+% Vertex:    12
+/ellipse    4.50    4.50    0.00  799.39  437.28 fa
+% Label:    12
+(15103) Black     0.00  802.23  426.66     l
+% Vertex:    13
+/ellipse    4.50    4.50    0.00  673.28  345.88 fa
+% Label:    13
+(15106) Black     0.00  676.12  335.25     l
+% Vertex:    14
+/ellipse    4.50    4.50    0.00  585.97  260.00 fa
+% Label:    14
+(15109) Black     0.00  588.82  249.38     l
+% Vertex:    15
+/ellipse    4.50    4.50    0.00  603.31  196.72 fa
+% Label:    15
+(15112) Black     0.00  606.15  186.10     l
+% Vertex:    16
+/ellipse    4.50    4.50    0.00  271.42  260.00 fa
+% Label:    16
+(15115) Black     0.00  274.26  249.38     l
+% Vertex:    17
+/ellipse    4.50    4.50    0.00  428.69  323.29 fa
+% Label:    17
+(15118) Black     0.00  431.54  312.66     l
+% Vertex:    18
+/ellipse    4.50    4.50    0.00  407.12  310.72 fa
+% Label:    18
+(15121) Black     0.00  409.97  300.09     l
+% Vertex:    19
+/ellipse    4.50    4.50    0.00  467.60  374.00 fa
+% Label:    19
+(15124) Black     0.00  470.45  363.37     l
+% Vertex:    20
+/ellipse    4.50    4.50    0.00  624.88  437.28 fa
+% Label:    20
+(15127) Black     0.00  627.72  426.66     l
+% Vertex:    21
+/ellipse    4.50    4.50    0.00  564.40  374.00 fa
+% Label:    21
+(15130) Black     0.00  567.25  363.37     l
+% Vertex:    22
+/ellipse    4.50    4.50    0.00  624.88  310.72 fa
+% Label:    22
+(15133) Black     0.00  627.72  300.09     l
+% Vertex:    23
+/ellipse    4.50    4.50    0.00  358.72  402.12 fa
+% Label:    23
+(15136) Black     0.00  361.57  391.50     l
+% Vertex:    24
+/ellipse    4.50    4.50    0.00  516.00  465.41 fa
+% Label:    24
+(15139) Black     0.00  518.85  454.78     l
+% Vertex:    25
+/ellipse    4.50    4.50    0.00  603.31  424.71 fa
+% Label:    25
+(15142) Black     0.00  606.15  414.09     l
+% Vertex:    26
+/ellipse    4.50    4.50    0.00  554.80  516.19 fa
+% Label:    26
+(15145) Black     0.00  557.65  505.57     l
+% Vertex:    27
+/ellipse    4.50    4.50    0.00  712.18  579.40 fa
+% Label:    27
+(15148) Black     0.00  715.03  568.78     l
+% Vertex:    28
+/ellipse    4.50    4.50    0.00  760.58  488.00 fa
+% Label:    28
+(15151) Black     0.00  763.43  477.37     l
+% Vertex:    29
+/ellipse    4.50    4.50    0.00  782.15  374.00 fa
+% Label:    29
+(15154) Black     0.00  785.00  363.37     l
+% Vertex:    30
+/ellipse    4.50    4.50    0.00  760.58  260.00 fa
+% Label:    30
+(15157) Black     0.00  763.43  249.38     l
+% Vertex:    31
+/ellipse    4.50    4.50    0.00  712.18  168.60 fa
+% Label:    31
+(15160) Black     0.00  715.03  157.97     l
+% Vertex:    32
+/ellipse    4.50    4.50    0.00  162.54  231.81 fa
+% Label:    32
+(15163) Black     0.00  165.39  221.18     l
+% Vertex:    33
+/ellipse    4.50    4.50    0.00  319.82  295.09 fa
+% Label:    33
+(15166) Black     0.00  322.66  284.46     l
+% Vertex:    34
+/ellipse    4.50    4.50    0.00  232.61  310.72 fa
+% Label:    34
+(15169) Black     0.00  235.46  300.09     l
+% Vertex:    35
+/ellipse    4.50    4.50    0.00  358.72  345.88 fa
+% Label:    35
+(15172) Black     0.00  361.57  335.25     l
+% Vertex:    36
+/ellipse    4.50    4.50    0.00  516.00  409.08 fa
+% Label:    36
+(15175) Black     0.00  518.85  398.46     l
+% Vertex:    37
+/ellipse    4.50    4.50    0.00  389.89  374.00 fa
+% Label:    37
+(15178) Black     0.00  392.74  363.37     l
+% Vertex:    38
+/ellipse    4.50    4.50    0.00  516.00  338.92 fa
+% Label:    38
+(15181) Black     0.00  518.85  328.29     l
+% Vertex:    39
+/ellipse    4.50    4.50    0.00  249.85  374.00 fa
+% Label:    39
+(15184) Black     0.00  252.69  363.37     l
+% Vertex:    40
+/ellipse    4.50    4.50    0.00  407.12  437.28 fa
+% Label:    40
+(15187) Black     0.00  409.97  426.66     l
+% Vertex:    41
+/ellipse    4.50    4.50    0.00  428.69  424.71 fa
+% Label:    41
+(15190) Black     0.00  431.54  414.09     l
+% Vertex:    42
+/ellipse    4.50    4.50    0.00  446.03  488.00 fa
+% Label:    42
+(15193) Black     0.00  448.88  477.37     l
+% Vertex:    43
+/ellipse    4.50    4.50    0.00  603.31  551.28 fa
+% Label:    43
+(15196) Black     0.00  606.15  540.65     l
+% Vertex:    44
+/ellipse    4.50    4.50    0.00  585.97  488.00 fa
+% Label:    44
+(15199) Black     0.00  588.82  477.37     l
+% Vertex:    45
+/ellipse    4.50    4.50    0.00  673.28  402.12 fa
+% Label:    45
+(15202) Black     0.00  676.12  391.50     l
+% Vertex:    46
+/ellipse    4.50    4.50    0.00  799.39  310.72 fa
+% Label:    46
+(15205) Black     0.00  802.23  300.09     l
+% Vertex:    47
+/ellipse    4.50    4.50    0.00   75.23  374.00 fa
+% Label:    47
+(15208) Black     0.00   78.08  363.37     l
+% Vertex:    48
+/ellipse    4.50    4.50    0.00  232.61  437.28 fa
+% Label:    48
+(15211) Black     0.00  235.46  426.66     l
+% Vertex:    49
+/ellipse    4.50    4.50    0.00  319.82  452.91 fa
+% Label:    49
+(15214) Black     0.00  322.66  442.29     l
+% Vertex:    50
+/ellipse    4.50    4.50    0.00  271.42  488.00 fa
+% Label:    50
+(15217) Black     0.00  274.26  477.37     l
+% Vertex:    51
+/ellipse    4.50    4.50    0.00  428.69  551.28 fa
+% Label:    51
+(15220) Black     0.00  431.54  540.65     l
+% Vertex:    52
+/ellipse    4.50    4.50    0.00  477.20  516.19 fa
+% Label:    52
+(15223) Black     0.00  480.04  505.57     l
+% Vertex:    53
+/ellipse    4.50    4.50    0.00  712.18  452.91 fa
+% Label:    53
+(15226) Black     0.00  715.03  442.29     l
+% Vertex:    54
+/ellipse    4.50    4.50    0.00  162.54  516.19 fa
+% Label:    54
+(15229) Black     0.00  165.39  505.57     l
+% Vertex:    55
+/ellipse    4.50    4.50    0.00  319.82  579.40 fa
+% Label:    55
+(15232) Black     0.00  322.66  568.78     l
+% Vertex:    56
+/ellipse    4.50    4.50    0.00  516.00  566.91 fa
+% Label:    56
+(15235) Black     0.00  518.85  556.28     l
+% Vertex:    57
+/ellipse    4.50    4.50    0.00  358.72  630.19 fa
+% Label:    57
+(15238) Black     0.00  361.57  619.56     l
+% Vertex:    58
+/ellipse    4.50    4.50    0.00  516.00  693.47 fa
+% Label:    58
+(15241) Black     0.00  518.85  682.85     l
+% Vertex:    59
+/ellipse    4.50    4.50    0.00  673.28  630.19 fa
+% Label:    59
+(15244) Black     0.00  676.12  619.56     l
+% Vertex:    60
+/ellipse    4.50    4.50    0.00  869.46  516.19 fa
+% Label:    60
+(15247) Black     0.00  872.31  505.57     l
+% Vertex:    61
+/ellipse    4.50    4.50    0.00  956.77  374.00 fa
+% Label:    61
+(15250) Black     0.00  959.61  363.37     l
+% Vertex:    62
+/ellipse    4.50    4.50    0.00  869.46  231.81 fa
+% Label:    62
+(15253) Black     0.00  872.31  221.18     l
+% Vertex:    63
+/ellipse    4.50    4.50    0.00  673.28  117.81 fa
+% Label:    63
+(15256) Black     0.00  676.12  107.18     l
+% Vertex:    64
+/ellipse    4.50    4.50    0.00  516.00   54.53 fa
+% Label:    64
+(15259) Black     0.00  518.85   43.90     l
+showpage end end

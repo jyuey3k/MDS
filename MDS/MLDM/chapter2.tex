@@ -1,0 +1,252 @@
+\chapter{Linear Algebra and Matrix Decompositions}
+\section{Vector Spaces}
+\begin{ddef}
+	A vector space $V$ is defined to be a set that is closed under scalar multiplication and vector addition. This closure gives rises to the following axioms, let $\mathcal{F}$ define the field of scalars.
+\begin{enumerate}
+\item Associativity of vector addition:
+	\begin{align*}
+	(\vec{u} + \vec{v}) + \vec{w} = \vec{u} + (\vec{v} + \vec{w})
+	\end{align*}
+\item Commutavity of vector addition:
+	\begin{align*}
+		u + v = v + u, \quad \forall u, v \in V
+	\end{align*}
+\item Identity element of vector addition:
+	\begin{align*}
+		\exists 0, v + 0 = v, \quad \forall v \in V
+	\end{align*}
+\item Inverse element of vector addition:
+	\begin{align*}
+		\forall v, \exists -v, v+ (-v) = 0  \quad \forall v \in V
+	\end{align*}
+\item Scalar Multiplication:
+	\begin{align*}
+	a(bv) = (ab)v, \quad \forall v \in V, a,b \in \mathcal{F}
+        \end{align*}
+
+\item Identity element of scalar multiplication:
+	\begin{align*}
+		\exists 1, 1v = v
+	\end{align*}
+\item Distributivity of scalar multiplication with respect to vector addition:
+	\begin{align*}
+		a(u + v) = au + av, \quad u,v \in V, a \in \mathcal{F}
+	\end{align*}
+\item Distributivity of scalar multiplication with respect to field addition:
+	\begin{align*}
+		(a+b)v = av + bv \quad a,b \in \mathcal{F}, v \in V
+	\end{align*}
+\end{enumerate}
+\end{ddef}
+
+\subsection{Orthogonal and Orthonormal Matrices}
+If $A$ is a matrix, $AI = IA = A$. Where $I$ is the identity matrix. 
+
+If $A = [a_1, \dots, a_m]$ is a matrix where $a_i$ are the columns then;\\
+\begin{ddef}
+\begin{enumerate}
+	\item $A$ is orthogonal if $a_i \cdot a_j = 0$ if $i \neq j$
+	\item $A$ is orthonormal if $a_i \cdot a_j = \delta_{ij}$
+\end{enumerate}
+\end{ddef}
+
+\section{Linear Dependence and Linear Independence}
+
+\begin{ddef}
+	\textbf{Linear Combination}
+	Let $V$ be a vector space over the scalar field $\mathcal{F}$ and let $S = (x_1, \dots x_n) \subseteq V$ be any $n$ vectors in $V$. Given a set of scalars $(a_1, \dots a_n)$, the vector:
+	\begin{equation}
+		\sum^n_{i=1} a_ix_i
+	\end{equation}
+	is called a linear combination of the $n$ vectors $x_i \in S$, with $\mathcal{S}$ of all such linear combinations of elements $S$ is called the subspace spanned by $S$.
+\end{ddef} 
+\begin{ddef}
+	\textbf{Linear Dependence}
+	Vectors are called linearly dependent if there exists scalars $a_1, \dots a_n \in \mathcal{F}$, not all equal to $0$ such that the linear combination of $x_1, \dots x_n$:
+\begin{equation}
+		\sum^n_{i=1} a_ix_i = 0
+	\end{equation}
+\end{ddef}
+
+\begin{ddef}
+	\textbf{Linear Independence}
+	Vectors are called linearly independent if it is not linearly dependent
+\end{ddef}
+
+\begin{cBox}
+	\textbf{Exercise}
+	For $v = (1,2,3)$
+	\begin{enumerate}
+		\item What is the norm of $v$.
+			\begin{solution}	
+			\begin{align*}
+				\norm{v} & = \sqrt{1 + 4 + 9}\\
+				& = \sqrt{14}
+			\end{align*}
+		\end{solution}
+		\item What is the unit vector in the direction of $v$:
+			\begin{solution}
+			\begin{align*}
+				\hat{v} & = \frac{v}{\norm{v}}\\
+				& = \left( \frac{1}{\sqrt{14}}, \frac{2}{\sqrt{14}}, \frac{3}{\sqrt{14}} \right)
+			\end{align*}
+		\end{solution}
+		\item What are the orthogonal bases for $v$:
+		\begin{solution}
+		Use the Cartesian unit vectors:
+			$(1,0,0) , (0,1,0), (0,0,1)$
+		\end{solution}
+	\item Find a perpendicular to $v$.
+		\begin{solution}
+			Let us choose an arbitrary vector $u$ such that it is linearly independent of $v$. Without loss of generality:
+			\begin{equation}
+				u = (3,5,7)
+			\end{equation}
+		Then we take the cross product of these two vectors to find a new vector $w$ which is is perpendicular to both $u$ and $v$. From this we can see that $w = (-1,2,-1)$ is perpendicular to $v$ through a verification of $v \cdot w = 0$ as required.
+		\end{solution}
+	\end{enumerate}
+	\begin{ddef}
+		\textbf{Cross Product} The cross product of two vectors $u$ and $v$ in the basis $(i,j,k)$ is defined to be:
+		\begin{equation}
+			u \times v = \begin{vmatrix}
+			i & j & k\\
+			u_i & u_j & u_k\\
+			v_i & v_j & v_k
+			\end{vmatrix}
+		\end{equation}
+	\end{ddef}
+\end{cBox}
+\section{Determinant}
+The determinant of a square matrix $A$, usually denoted as $\text{det}(A)$ or $|A|$ is a value that is computed from the elements of the matrix. It provides information on the scaling factors on the transformation described by the matrix. Furthermore, it provides us insight into the invertibility of the matrix in that:
+\begin{equation}
+	\text{det}(A^{-1}) = \frac{1}{\text{det}(A)}
+\end{equation}
+
+\begin{ddef}
+	\textbf{Determinant}
+	For a given matrix $A$;
+	\begin{align*}
+		A & = \begin{pmatrix}
+			a & b & c \\
+			d & e & f \\
+			g & h & i
+		\end{pmatrix}
+		\intertext{The determinant $|A|$ is given by;}
+		|A| & =  \begin{vmatrix}
+			a & b & c \\
+			d & e & f \\
+			g & h & i
+		\end{vmatrix}\\
+		& = a(ei -hf) -b(di -fg) + c(dh - eg)
+	\end{align*}
+\end{ddef}
+\section{Rank of a matrix}
+\begin{ddef}
+	Given a matrix $M$, the rank of a matrix is the maximum number of linearly independent columns or rows. (To see this perform Elementary Row Operations (ERO) on the matrix until Row Echelon Form is produced), then the amount of linearly independent columns or rows  should be immediately obvious. 	
+\end{ddef}
+
+\begin{dBox}
+	\textbf{Proof that Column Rank is equivalent to Row rank.}
+	Let us consider a matrix $A$ such that $A$ is of size $(m,n)$ 	
+\end{dBox}
+\subsubsection{Transpose of a matrix}
+\begin{ddef}
+	The transpose of a matrix $A$, denotd $A^{T}$ or $A'$ is another matrix $B$ such that:
+	\begin{equation}
+		B(i,j) = A(j,i)
+	\end{equation}
+\end{ddef}
+\section{Decompositions}
+\subsubsection{Eigenvalue Decomposition} 
+For a given square matrix $A$ we say that $\lambda$ is an eigenvalue and $u$ is an eigenvector if 
+
+\begin{align*}
+	Au = \lambda u, \quad u \neq 0
+\end{align*}
+
+Then for such a given matrix $A$ with $n$ linearly independent eigenvectors $u_1, \dots u_n$. We can factorise $A$ as the following:
+
+\begin{align*}
+	A = U\Lambda U^{-1}
+\end{align*}
+
+If $A$ is symmetric then its eigenvalues $\lambda_i$ are real and all its eigenvectors are orthonormal;
+
+\begin{align*}
+	u_i^Tu_j = \delta_{ij}
+\end{align*}
+
+Recall that for orthnormal matrices, the inverse is equal to the transpose and as such:
+
+\begin{align*}
+	U^TU & = UU^T  = I\\
+	|U| & = 1
+\end{align*}
+
+From which we have that:
+\begin{align*}
+	A = U \Lambda U^T = \sum^n_{i=1} \lambda_i u_i u_i^T
+\end{align*}
+
+Given a matrix $X \in \mathbb{R}^{n \times d}$, the principle components of $X$ are the eigenvectors of $X^TX$. The method of principle component analysis finds eigenvalues and eigenvecotrs of this matrix $X^TX$
+
+\begin{cBox}
+	\textbf{Exercise} \\
+	Find eigenvalues and eigenvectors for the following matrix:
+	\begin{align*}
+		\begin{pmatrix}
+		3 & 2 \\ 2 & 6
+	\end{pmatrix}
+	\end{align*}
+	\begin{solution}
+		We first find the Characteristic Polynomial:
+			\begin{align*}
+				\begin{vmatrix}
+					\lambda - 3 & 2 \\
+					2 & \lambda -6 
+				\end{vmatrix} & = 0\\
+				(\lambda-3)(\lambda-6) -4 & = 0\\
+				\lambda^2 - 9\lambda + 14 & = 0\\
+				(\lambda -7)(\lambda-2) & = 0
+			\end{align*}
+			Therefore the eigenvalues are $\lambda = 2, 7$ We can calculate the eigenvectors through substuiting the eigenvalues into $(A - \lambda I)v = 0$. From this we can see that for $\lambda = 2$ the eigenspace generated by $(1,2)$. Furthermore for $\lambda = 7$, the eigenspace is spanned by basis $(2,-1)$. (It means the same thing to span an eigenspace and generate an eigenspace )
+	\end{solution}
+\end{cBox}
+
+\section{Singular Value Decomposition}
+Given any real matrix $X$ of size $(m,n)$, it can be expressed as:
+\begin{align*}
+	X = U \Sigma V^T
+\end{align*}
+Where $U$ is a $m\times r$ column orthonormal matrix, $V^T$ is a $r \times m$ column-orthonormal matrix and $\Sigma$ is a diagonal $r\times r$ matrix of singular values $\lambda_i$. From this we can see that:
+\begin{equation}
+X = \lambda_1 u_1 v^t_1 + \lambda_2 u_2 v^t_2 + \dots \lambda_r u_r v^t_r
+\end{equation}
+We can consider this singular value decomposition as decomposing a linear mapping $X$ into various components visually through $X$ acting upon a circle to form a skewed ellipse. $V^t$ is a rotation of the circle, for which we have $\Sigma$ which scales the coordinate axis , effectively scaling the circle into an ellipse. Then finally we have $U$ which rotates the ellipse to the skwewed position. 
+
+\subsubsection{Compression}
+
+We know that the size of $X$ is $mn$, then our decomposition is:
+
+\begin{equation}
+	\text{size}(U + \Sigma + V) = mr + r + nr
+\end{equation}
+
+As such we can see that the compression ratio is :
+
+\begin{align*}
+	\frac{mr + r + nr}{mn} & = \frac{r(m+1+n)}{mn}\\
+	& \approx \left( \frac{rm}{mn} \right)\\
+	& = \frac{r}{n}
+\end{align*}
+
+To achieve better compression, we look at the singular values $\lambda_i$ and we arrange them in decreasing order:
+\begin{align*}
+\lambda_i \geq \dots \geq \lambda_r & > 0
+\intertext{then for $\lambda_k \gg \lambda_r$}
+X & = \sum^r_{i=1} \lambda_i u_i v_i^t\\
+& \approx  \sum^k_{i=1} \lambda_i u_i v_i^t\\
+& = \hat{X}
+\end{align*}
+for which we have compression ratio $k/n$
+

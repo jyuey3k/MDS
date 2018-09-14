@@ -1,0 +1,380 @@
+\documentclass[twoside]{article}
+\usepackage{mdframed}
+\usepackage[hmarginratio=1:1,top=32mm,columnsep=20pt]{geometry} % Document margins
+\usepackage{multicol} % Used for the two-column layout of the document
+\usepackage[hang, small,labelfont=bf,up,textfont=it,up]{caption} % Custom captions under/above floats in tables or figures
+\usepackage{booktabs} % Horizontal rules in tables
+\usepackage{float} % Required for tables and figures in the multi-column environment - they need to be placed in specific locations with the [H] (e.g. \begin{table}[H])
+\usepackage{hyperref} % For hyperlinks in the PDF
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{lettrine} % The lettrine is the first enlarged letter at the beginning of the text
+\usepackage{paralist} % Used for the compactitem environment which makes bullet points with less space between them
+\usepackage{tikz}
+\usepackage{esint}
+\usepackage{centernot}
+\usepackage{lmodern}
+\usetikzlibrary{3d}
+\usetikzlibrary{patterns,calc,hobby}
+\usetikzlibrary{decorations.pathreplacing}
+\tikzset{
+	partial ellipse/.style args={#1:#2:#3}{
+		insert path={+ (#1:#3) arc (#1:#2:#3)}
+	}
+}
+\usepackage{xcolor}
+
+\usepackage{fancyhdr} % Headers and footers
+\pagestyle{fancy} % All pages have headers and footers
+\fancyhead{} % Blank out the default header
+\fancyfoot{} % Blank out the default footer
+\fancyhead[C]{Jimmy Yue $\bullet$ Statistics $\bullet$ Jimmy Yue} % Custom header text
+\fancyfoot[RO,LE]{\thepage} % Custom footer text
+
+\newmdenv[skipabove=7pt,
+rightline=false,
+leftline=true,
+topline=false,
+bottomline=false,
+skipbelow=5pt,
+linecolor=black,
+innerleftmargin=5pt,
+innerrightmargin=5pt,
+innertopmargin=5pt,
+leftmargin=0cm,
+rightmargin=0cm,
+linewidth=4pt,
+innerbottommargin=5pt]{cBox}
+
+\theoremstyle{definition}
+\newtheorem*{solutionT}{Solution}
+
+\newenvironment{solution}{\begin{cBox}\begin{solutionT}}{\hfill{\scriptsize\ensuremath{\square}}\end{solutionT}\end{cBox}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\vect}[1]{\vec{\pmb{#1}}}
+\newcommand{\uvect}[1]{\hat{\mathbf{#1}}}
+\newcommand{\leviciv}{\epsilon_{ijk}}
+
+\newmdenv[skipabove=7pt,
+rightline=false,
+leftline=true,
+topline=false,
+bottomline=false,
+skipbelow=5pt,
+linecolor=black,
+innerleftmargin=5pt,
+innerrightmargin=5pt,
+innertopmargin=5pt,
+leftmargin=0cm,
+rightmargin=0cm,
+linewidth=4pt,
+innerbottommargin=7,
+backgroundcolor=light-gray]{dBox}
+
+
+
+\theoremstyle{definition}
+\newtheorem*{proof1}{Definition}
+
+\newenvironment{ddef}{\begin{dBox}\begin{proof1}}{\hfill{\scriptsize}\end{proof1}\end{dBox}}
+\newcommand{\pdif}[2]{\frac{\partial#1}{\partial#2}}
+\definecolor{light-gray}{gray}{0.85}
+%----------------------------------------------------------------------------------------
+%-	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\title{\vspace{-15mm}\fontsize{24pt}{10pt}\selectfont\textbf{Statistics - Week 1}} % Article title
+
+\author{
+\large
+\textsc{Jimmy Tsz Ming Yue}\thanks{440159151}\\[2mm] % Your name
+\normalsize University of Sydney \\ % Your institution
+\normalsize \href{mailto:jyue6728@uni.sydney.edu.au}{jyue6728@uni.sydney.edu.au} % Your email address
+\vspace{-5mm}
+}
+\date{}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+
+\maketitle % Insert title
+
+\thispagestyle{fancy} % All pages have headers and footers
+\hrule \smallskip
+
+\noindent Semester 2 \quad Statistics \hspace{10.5
+cm} 2018
+\smallskip
+\hrule
+\smallskip
+\tableofcontents
+\section{Importing Files and Important Functions}
+To do analysis of files, we first need to import into a the R program. We can use use the code:
+<<>>=
+#read.delim()
+#scan 
+#read.table
+@
+We can find help on any function in R by placing a ? mark in front of a command: for example 
+<<>>=
+?read.table()
+@
+This is equivalent to the help function:
+<<>>=
+help("read.table")
+@
+
+We can save a workspace in R using the function:
+<<>>=
+save.image()
+@
+which saves parameters and command history.
+
+\subsection{Basics: Directories}
+To get the current working directory:
+<<>>=
+getwd()
+@
+Furthermore we can change directory using the setwd() command:
+<<>>=
+setwd("/home/jyue/Documents/MDS/STAT/Data_w1/")
+@
+We  can also save image with a specific name as:
+<<>>=
+save.image("week1.Rdata")
+@
+\subsection{Search paths and packages}
+In R there exists a base package, which exsists with an installation enviroment of R. There also exists community built "contributed" packages which are available for installation. The search funcction gives a list of attached backages and R objects. 
+<<>>=
+search()
+library(cluster)
+search()
+@
+as we can see we have that the third entry of the search function is the cluster library that we have loaded.
+\section{Basic elements in R}
+\subsection{Concatenate and is.datatype}
+Normally in R we work with vectors or Matricies in R. (Another one is a list but that shall be in later sections) The simplest data structure is a numeric vector, which is a singular entity consisting of an ordered collection of numbers. To generate a vector we use the concatenate function:
+<<>>=
+x = c(10.4, 5.6, 3.1, 6.4, 21.7)
+x
+x <- c(10.4, 5.6, 3.1, 6.4, 21.7)
+x
+@
+which are numeric vectors. We can verify that it is numeric through the is.numeric() function:
+<<>>=
+is.numeric(x)
+@
+if we have strings included the boolean returned from is.numeric will return false:
+<<>>=
+x = c(10.4, "5.6", 3.1, 6.4, 21.7)
+is.numeric(x)
+@
+similarly we have the is.character command for strings and is.logical for boolean results:
+<<>>=
+X <- c("a", "b", "c3", "4")
+is.character(X)
+X <- c(FALSE, FALSE, TRUE, FALSE)
+is.logical(X)
+@
+\subsection{Package Installations}
+We can install packages using the install.package(packagename)
+
+We load packages using the forementioned libarary function:
+<<>>=
+library(e1071)
+@
+\section{Matrices}
+WE can create matrices using the matrix function:
+<<>>=
+mymatrix <- matrix(1:20,5,4)
+mymatrix
+@
+we can find subsets of matrices through indexing:
+<<>>=
+mymatrix[1,2] 
+#first row second column
+mymatrix[1,]
+#frist row
+mymatrix[,1]
+#first column
+mymatrix[1:2,]
+#first and second column
+mymatrix[c(1,3),]
+#first and third column
+@
+\section{R markdown}
+R markdown is shit so we skip this section
+\section{Review of Statistical Concepts}
+\subsection{Population and Samples}
+\begin{ddef}
+  Population: The set of data corresponding to the entire collection of units about which information is sought 
+\end{ddef}
+Examples of populations include: 
+\begin{itemize}
+\item Blood Presure: blood pressure readings of all people in Australia
+\item The number of languages spoken from ALL currently enrolled students in University of Sydney
+\end{itemize}
+\begin{ddef}
+Sample: A subset of population data that are actually collected in the course of a study.
+\end{ddef}
+Examples of samples include:
+\begin{itemize}
+\item Blood pressure readings of $1000$ randomly selected people in Australia
+\item The number of lanugages spoken from $500$ randomly selected students currently enrolled in University of Sydney
+\end{itemize}
+In most studies, it is difficult to obtain information about the
+whole population. That is why we rely on samples to make
+estimates and inferences related to the whole population.
+\subsection{Parameters vs Statistics}
+A parameter is a number that describes a population
+A statistic is a number that describes a sample
+We often estsimate parameters thorough looking at statistics. Population parameters are notationally denoted using Greek letters such as $\mu, \sigma$ whereas statistics we use roman letters such as : $x ,s$ or we can put hats on greek letters such as: 
+$\hat{\mu}, \hat{\sigma}$
+A parameter is a fixed number usually unknown. A statistic is a variable whose value varies from sample to sample
+\subsection{Descriptive Statistics}
+Many methods are available for summarising data in both nnumeric and graphical form
+\subsubsection{Numeric}
+For measures of location we use Mean, Mode, Median
+For measures of Spread we use: Standard Deviation, Median absolute deviation, IQR (Inter quartile Range)
+we can also use Min, Max Quartle, Five num summaries
+\subsubsection{Mean}
+Consider a sample of data drawn from some population
+\begin{equation}
+  \{x_1, \dots x_n\}
+\end{equation}
+Definition of sample mean: The sum of all observations divided by the number of observations. It is written in symbols as:
+\begin{equation}
+  \bar{x} = \frac{1}{n} \sum_{i=1}^{n} x_i
+\end{equation}
+Example:
+Consider the following data set:
+23, 34, 32, 33, 34, 22, 32, 29, 29, 34, 32, 31 \\
+Sample mean = $365 / 12 = 30.4$
+\subsubsection{Median}
+The median of a set of data is a value $\tilde{x}$ such that at least one half of the observations are less than or equal to $\tilde{x}$ and at least one half of the observations are greater than or equal to $\tilde{x}$. 
+Definition of Sample median is:
+\begin{enumerate}[(a)]
+\item The $(n+1)/2$ largest observation if $n$ odd
+\item The average of the $n/2$ and the $n/2 + 1$ if $n$ even
+
+\end{enumerate}
+\subsubsection{Mode}
+The mode is the most frequently occuring value amongst all the observations in a sample
+\subsubsection{Mode or Median}
+Both the median and the mean are measures of location, but which
+is preferable?. \\
+For symmetric data, the mean is usually less variable from sample
+to sample than the median.\\
+For skewed data, the median is a better measure of location.\\
+The median does not reacted as much as the mean by outliers. This
+property of the median is known as ‘robustness’.
+\subsubsection{Range}
+The range of a list is the largest value minus the smallest value.
+This gives a quick feeling for the overall spread – but is misleading
+because it is solely influenced by two most extreme values.
+\subsubsection{Graphical}
+
+\section{Tutorial 1}
+\begin{enumerate}
+\item Download Communities and Crime dataset from \\
+\href{(https://archive.ics.uci.edu/ml/datasets/Communities+and+Crime)}{https://archive.ics.uci.edu/ml/datasets/Communities+and+Crime}
+
+\item Read in the data using RStudio
+\begin{solution}
+We use the read table command to import the data:
+<<>>=
+data <- read.csv("communities.data", na.strings = "?", header = FALSE)
+#head(data)
+name <- read.table("communities.names", sep = " ", header = FALSE)
+#name[,2]
+df <- data.frame(data)
+colnames(df) <- name[,2]
+head(df)
+@
+
+<<>>=
+df <- na.omit(df)
+@
+
+
+\end{solution}
+
+
+\item Create R Markdown report and use descriptive statistics to summarise data
+\begin{solution}
+Let us first look at the dependent variable of response (crime rate per pop)
+<<fig=True>>=
+response <- df["ViolentCrimesPerPop"]
+summary(response)
+boxplot(response)
+
+@
+<<fig=True>>=
+numericresp <- as.numeric(unlist(response))
+hist(numericresp, xlab ="Crime Rate", main="Histogram of Reported Crime Rate")
+@
+<<>>=
+dfnumeric <- subset(df, select= -c(communityname))
+@
+
+\end{solution}
+\item Identify the top 9 most predictive variable with respect to response (remove instances
+with missing values and/or categorical variables if necessary)
+\begin{solution}
+We generate a loop over the above data frame and create a correlation vector with respect to response
+<<>>=
+correlationVector <- c()
+for(i in 1:ncol(dfnumeric)) {
+  correlationVector <- c(correlationVector, cor(dfnumeric[,i], response))
+}
+names(correlationVector) <- colnames(dfnumeric)
+#correlationVector 
+sortnames <- name[,2][order(abs(correlationVector), decreasing = TRUE)[1:9]]
+sortnames
+@
+\end{solution}
+\item Generate histogram, estimate density, and boxplot for each of these predictive
+variables 
+\begin{solution}
+We generate a new dataframe composed of the 9 highly correlated variables:
+<<fig=True>>=
+df9 <- subset(dfnumeric, select = c("PolicBudgPerPop", "PctFam2Par", "PersPerFam", "PctYoungKids2Par", "NumIlleg", "PctKids2Par", "racepctblack", "pctWSocSec","pctWFarmSelf"))
+par(mfrow = c(3, 3))
+for (i in names(df9)) {
+  x <- df9[,i]
+  hist(x, main = i)
+}
+
+@
+<<fig=True>>=
+par(mfrow = c(3, 3))
+for (i in names(df9)) {
+  x <- df9[,i]
+  boxplot(x, main = i)
+  
+}
+@
+<<fig=True>>=
+par(mfrow = c(3, 3))
+for (i in names(df9)) {
+  x <- density(df9[,i])
+  plot(x, main = i) 
+  
+}
+@
+
+\end{solution}
+\item Are these highly predictive variables correlated with each other?
+\begin{solution}
+<<fig=TRUE>>=
+res <- cor(df9)
+round(res, 2)
+heatmap(res)
+@
+
+\end{solution}
+\end{enumerate}
+
+\end{document}

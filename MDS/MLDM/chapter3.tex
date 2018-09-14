@@ -1,0 +1,213 @@
+\chapter{Basics of Probability Theory and Baye's Rule}
+
+\section{Probability Theory}
+
+We ask ourselves the question as to the motivation of proability theory. Laplace a French Mathematician states that "Probability is common sense" reduced to calculation". we use probability theory is useful in understanding. studying, and analysing complex real world systems. 
+
+\subsection{Understanding Uncertainty}
+
+We have several ways to describe probabilities and associated uncertainties. 
+\begin{enumerate}
+\item Aleatory: Random, left to choice with no real ability to predict outcome. 
+\item Epistemic: Encoding Knowledge as a measure of belief, ability to predict outcome
+\item Sensing: ability to encode noisy measurements.
+\end{enumerate}
+
+It should be noted that it is better to be imprecisely right than precisely wrong!
+
+
+\subsection{How good is the output $h_s$}
+
+As data scientists it is important to consider the following questions. 
+\begin{enumerate}
+\item We learn our hypothesis from given training data. How good is it for the test data?
+\item Given a previously unseen data, how will $h_s$ perform on it? 
+\end{enumerate}
+
+\subsubsection{Predictions and Probabilities}
+
+When we make predictions we should assign probabilities with the predicitions. For example we can say that:
+
+\begin{enumerate}
+	\item There is $20\%$ chance it will rain tomorrow.
+	\item There is $50\%$ chance that the tumour is malignant. 
+	\item There is $60\%$ chance that the stock market will fall by the end of the week. 
+	\item There is $30\%$ that the next president of the United states will be a Deomcrat. 
+\end{enumerate}
+
+We can assign probabilities to complex and complicated events using the correct data algorithms and through counting. 
+
+\section{Probability Basics}
+ 
+\subsubsection{Experiments and Sample Space}
+
+Consider an experiment and let $S$ be the space of possible outcomes. 
+
+For example we can say that for:
+
+\begin{enumerate}
+	\item Experiment tossing a coin; $S = \left\{ h,t \right\}$
+	\item Experiment rolling a pair of dices; $S = \left\{ (1,1), (1,2), \dots , (6,6) \right\}$
+	\item Experiment is a race consisting of three cars with labels: $\left\{ (1,2,3), (1,3,2), \dots (3,2,1) \right\}$ 
+\end{enumerate}
+
+Let us take another example: $S = \left\{ 1, 2, \dots, m \right\}$. Where for non negative probabilities $p_i \geq 0$ for $i = 1 ,\dots ,m$ the sum of probabilities is unitary; $\sum_i p_i = 1$, with $p_i$ the probability of outcome $i$. Lets say that we toss a fair coin, then we have as above that the sample space is $S = \left\{ h,t \right\}$. Then we have that $p_h = 0.5$ and $p_t = 0.5$
+
+\subsubsection{Events}
+
+\begin{ddef}
+	An Event $A$ is a set of possible outcomes of the experiment. Therefore we have $A \subseteq S$.
+\end{ddef}
+
+
+We offer the example of $A$ being the event of getting a seven when we roll a pair of dice. Then we have that;
+
+\begin{align*}
+	A & = \left\{ (1,6), (6,1), (2,5), (5,2), (4,3), (3,4) \right\}
+	\intertext{Hence we have the probability of $A$ is;}
+	P(A) & = \frac{6}{6^2}\\
+	& = 6
+\end{align*}
+
+In general we have that:
+
+\begin{equation}
+	P(A) = \sum_{i\in A} p_i
+\end{equation}
+
+\subsubsection{Events and Sample Space}
+
+Both the sample space $S$ and events $A$  are probability sets. We define the follwing:
+
+\begin{ddef}
+	\begin{align}
+		P(S) = 1;
+		P(\phi) = 0 
+	\end{align}
+Where the proability of all the entire sample space is bound to be $1$ and the probability of no events $\phi$ (the empty set) is then $0$. In addition we define the union of the probability of events as follow:
+\begin{align}
+	P(A \cup B)f= P(A) + P(B) - P(A \cap B)\\
+\end{align}
+Often we denote the intersection in differing notations:
+\begin{equation}
+	P(A \cap B) \equiv P\left( AB \right) \equiv P(A,B)
+\end{equation}
+\end{ddef}
+
+\begin{ddef}
+	We define the complement of an event $A$ as:
+	\begin{equation}
+		P(A^c) = 1 - P(A)
+	\end{equation}
+\end{ddef} 
+The above denotes what is called the axioms of probability.
+
+Let us denote this with an example:
+
+\begin{cBox}
+	\textbf{Example}: Suppose the probability of raining today is $0.4$ and tomorrow is also $0.4$ and on both days is $0.1$. What is the probability it does not rain on either day? 
+
+
+	Let us denote the sample space $S$ as $S = \left\{ (R,N) (R,R), (N,N) (N,r) \right\}$. Let $A$ be the event that it will rain today and $B$ that it will rain tomorrow. Then 
+	\begin{equation}
+	A = \left\{ (R,N), (R,R) \right\}, \left\{ (N,N), (N,R) \right\}
+	\end{equation}
+\end{cBox}
+
+Then the probability that it will rain at least today or tomorrow is:
+
+\begin{equation}
+	P(A\cup B) = 0.4 + 0.4 -0.1 =0.7
+\end{equation}
+
+Therefore the probability that it will not rain on either day is $0.3$. 
+
+\subsection{Discrete Random Variables}
+
+Events like ``ASX is up'' are binary events. We can extend the definition of such events by defining a discrete random variable.  We can then say that the probability $P(X=x)$ is the probability that event $X=x$. For a discrete random variable, 
+\begin{align*}
+	0  \leq P(X=x) & \leq 1\\
+	\sum_{x \in X} P(X=x) & = 1
+\end{align*}
+
+\subsection{Continuous Random Variables}
+
+Random Variables can also be continuous, examples of this are; ``Height, rainfall, salary, chemical conccentration etc $\dots$. ''. we can talk about the average (mean) and standard deviation or variance. 
+
+\subsection{Probability Densities}
+
+Random Variables (both continous and discrete) are associated with distributions. 
+
+\begin{enumerate}
+\item Common examples of discrete distributions are Bernoulli, binomial, multinomial, Poisson.
+\item Common examples of continuous distributions are Gaussian, Laplacian, Exponential, Gamma. 
+\end{enumerate}
+
+Associated with distributions are parameters. In Machine Learning and Statistics, we seek to learn the parameters of a distribution from data. We can talk about the probability distribution function:
+
+\begin{align*}
+	p(x \in (a,b)) = \int^b_a p(x)dx 
+	\intertext{For which the cumulative distriubtion function}
+	P(z) = \int^z_{-\infty} p(x)dx
+	\intertext{and for $p(x) \geq 0$}
+	\int^\infty_{-\infty}p(x)dx = 1
+\end{align*}
+
+\subsubsection{Expectations}
+
+\begin{dBox}
+	The expectation of a discrete random variable is given by; 
+	\begin{equation}
+		E[f] = \sum_x p(x)f(x)
+	\end{equation}
+\end{dBox}
+
+\begin{dBox}
+	The expectation of a continous random variable is given by;
+	\begin{equation}
+		E[f] = \int p(x)f(x) dx
+	\end{equation}
+\end{dBox}
+
+\begin{dBox}
+	The conditional expectation of a discrete random variable is given by;
+	\begin{equation}
+		E_x[f|y] = \sum_x p(x|y) f(x)
+	\end{equation}
+\end{dBox}
+
+\begin{dBox}
+	The approximate expectation of both discrete and continuous random variables is given by;
+
+	\begin{equation}
+		E[f] \approx \frac{1}{N} \sum^N_{n=1} f(x_n)
+	\end{equation}
+\end{dBox}
+
+\subsubsection{Variance and Covariance}
+\begin{dBox}
+	The variance of a random variable $f$ is given by:
+	\begin{equation}
+		\text{Var}[f] = E\left[ \left( f(x) - E\left[ f(x) \right] \right)^2\right] = E\left[ f(x)^2 \right] - E\left[ f(x) \right]^2
+	\end{equation}
+\end{dBox}
+
+\begin{dBox}
+	The covariance of two random scalar variables $x$ and $y$ is given by;
+
+	\begin{align*}
+		\text{cov}[x,y] & = E_{x,y}\left[ \left\{ x - E[x] \right\}\left\{ y-E[y] \right\} \right]\\
+		& = E_{x,y}[xy] - E[x]E[y]
+	\end{align*}
+\end{dBox}
+
+\begin{dBox}
+	The covariance of two random vector variables $\vec{x}$ and $\vec{y}$ is given by;
+
+	\begin{align*}
+		\text{cov}[\vec{x},\vec{y}] & = E_{\vec{x},\vec{y}}\left[ \left\{ \vec{x} - E[\vec{x}] \right\}\left\{ \vec{y}^T-E[\vec{y}^T] \right\} \right]\\
+		& = E_{\vec{x},\vec{y}}[\vec{x}\vec{y}^T] - E[\vec{x}]E[\vec{y}^T]
+	\end{align*}
+\end{dBox}
+
+INCOMPLETE ----- Will complete given time

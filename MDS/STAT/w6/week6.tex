@@ -1,0 +1,334 @@
+\documentclass[twoside]{article}
+\usepackage{mdframed}
+\usepackage[hmarginratio=1:1,top=32mm,columnsep=20pt]{geometry} % Document margins
+\usepackage{multicol} % Used for the two-column layout of the document
+\usepackage[hang, small,labelfont=bf,up,textfont=it,up]{caption} % Custom captions under/above floats in tables or figures
+\usepackage{booktabs} % Horizontal rules in tables
+\usepackage{float} % Required for tables and figures in the multi-column environment - they need to be placed in specific locations with the [H] (e.g. \begin{table}[H])
+\usepackage{hyperref} % For hyperlinks in the PDF
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{lettrine} % The lettrine is the first enlarged letter at the beginning of the text
+\usepackage{paralist} % Used for the compactitem environment which makes bullet points with less space between them
+\usepackage{tikz}
+\usepackage{esint}
+\usepackage{centernot}
+\usepackage{lmodern}
+\usetikzlibrary{3d}
+\usetikzlibrary{patterns,calc,hobby}
+\usetikzlibrary{decorations.pathreplacing}
+\tikzset{
+	partial ellipse/.style args={#1:#2:#3}{
+		insert path={+ (#1:#3) arc (#1:#2:#3)}
+	}
+}
+\usepackage{xcolor}
+
+\usepackage{fancyhdr} % Headers and footers
+\pagestyle{fancy} % All pages have headers and footers
+\fancyhead{} % Blank out the default header
+\fancyfoot{} % Blank out the default footer
+\fancyhead[C]{Jimmy Yue $\bullet$ Statistics $\bullet$ Jimmy Yue} % Custom header text
+\fancyfoot[RO,LE]{\thepage} % Custom footer text
+
+\newmdenv[skipabove=7pt,
+rightline=false,
+leftline=true,
+topline=false,
+bottomline=false,
+skipbelow=5pt,
+linecolor=black,
+innerleftmargin=5pt,
+innerrightmargin=5pt,
+innertopmargin=5pt,
+leftmargin=0cm,
+rightmargin=0cm,
+linewidth=4pt,
+innerbottommargin=5pt]{cBox}
+
+\theoremstyle{definition}
+\newtheorem*{solutionT}{Solution}
+
+\newenvironment{solution}{\begin{cBox}\begin{solutionT}}{\hfill{\scriptsize\ensuremath{\square}}\end{solutionT}\end{cBox}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\vect}[1]{\vec{\pmb{#1}}}
+\newcommand{\uvect}[1]{\hat{\mathbf{#1}}}
+\newcommand{\leviciv}{\epsilon_{ijk}}
+
+\newmdenv[skipabove=7pt,
+rightline=false,
+leftline=true,
+topline=false,
+bottomline=false,
+skipbelow=5pt,
+linecolor=black,
+innerleftmargin=5pt,
+innerrightmargin=5pt,
+innertopmargin=5pt,
+leftmargin=0cm,
+rightmargin=0cm,
+linewidth=4pt,
+innerbottommargin=7,
+backgroundcolor=light-gray]{dBox}
+
+
+
+\theoremstyle{definition}
+\newtheorem*{proof1}{Definition}
+
+\newenvironment{ddef}{\begin{dBox}\begin{proof1}}{\hfill{\scriptsize}\end{proof1}\end{dBox}}
+\newcommand{\pdif}[2]{\frac{\partial#1}{\partial#2}}
+\definecolor{light-gray}{gray}{0.85}
+%----------------------------------------------------------------------------------------
+%-	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\title{\vspace{-15mm}\fontsize{24pt}{10pt}\selectfont\textbf{Statistics - Week 6}} % Article title
+
+\author{
+\large
+\textsc{Jimmy Tsz Ming Yue}\thanks{440159151}\\[2mm] % Your name
+\normalsize University of Sydney \\ % Your institution
+\normalsize \href{mailto:jyue6728@uni.sydney.edu.au}{jyue6728@uni.sydney.edu.au} % Your email address
+\vspace{-5mm}
+}
+\date{}
+
+%----------------------------------------------------------------------------------------
+
+\usepackage{Sweave}
+\begin{document}
+\input{week6-concordance}
+%\SweaveOpts{concordance=TRUE}
+
+\maketitle % Insert title
+
+\thispagestyle{fancy} % All pages have headers and footers
+\hrule \smallskip
+
+\noindent Semester 2 \quad Statistics \hspace{10.5
+cm} 2018
+\smallskip
+\hrule
+\smallskip
+\tableofcontents
+\section{Training error Vs Test error}
+
+\begin{ddef}
+	\textbf{Test Error} is the average error that results from using a statistical learning method to predict the response on a new observation, one that was not used in training the method.
+\end{ddef}
+
+\begin{ddef}
+	\textbf{Training Error} is calculated by applying statistical learning to the observations used in its training
+\end{ddef}
+
+Often, training error rate and test error rates are quite different, in particular the training error can dramatically underestimate the test error rate.  
+\subsection{Validation Set Approach}
+To minimise these errors, the best solution is to take a large designated test set. But this is not always possible, as such we need alternative methods such as BIC, which makes mathematical adjustments to the training error rate in order to estimate the test error rate, which is the subject of later discussion. However there are other methods, 
+\begin{cBox}
+	\textbf{Validation Set Approach}
+	which comprises of considering a class of methods that estimate the test error by holding out a subset of the training observations from the fitted process, and then applying the statistical learning method to those held out observations. We first randomly divide the available set of samples into two parts: a training set and a validation or hold-out set. The model is then fit on the training set and the fitted model is used to predict the respones for the observations in the validation set. The resulting validation-set error provides an estimate of the test error. This is typically assessed using MSE in the case of a quantitative response and misclassification in the case of a qualitative (discrete) response.
+\end{cBox}
+
+\subsection{Drawbacks of validation set approach} 
+
+The validation estimate of the test error can be highly variable, depending on precisely which observations are included in the training set and which obserations are included in the validation set. IN the validation approach, only a subset of the observations (the ones included in the training set) are used to fit the model. This suggests that the validation set error may tend to overstimate the test error for the model fit on the entire data set. As such the widely used approach for estimating test error is:
+
+\begin{dBox}
+	\textbf{K - Fold cross validation}
+	Estimates can be used to select best model and to give an idea of the test error of the final chosen model. Idea is to randomly divide the data into $k$ equal-sized parts. Leave out part $k$, fit the model to the other $K-1$ parts (combined), and then obtain predictiosn for the left-out $k$-th part.  This is done in turn for each part $k = 1, 2, \dots K$. adn then the results are combined.
+\\
+We provide the formulation:
+
+Let the $K$ parts be $C_1, C_2, \dots, C_K$ where $C_k$ denotes the indicies of the observations in part $k$. There are $n_k$ observations in part $k$: if $n$ is a multiple of $K$, then $n_k = n/K$. Then compute:
+\begin{equation}
+	\text{CV}_(K) = \sum^K_{k=1} \frac{n_k}{n} \text{MSE}_k
+\end{equation}
+
+where $\text{MSE}_k = \sum_{i \in C_k} (y_i - \hat{y}_i)^2/n_k$ and $\hat{y}_i$ is the fit for observation $i$, obtained from the data with part $k$ removed.  Setting $K = n$ yields $n$-fold or leave one out cross validation (LOOCV)
+\end{dBox}
+
+We can extend this for classification problems:
+
+\begin{dBox}
+	\textbf{Cross - Validation for classification}
+	We divide the data into $K$ roughly equal-sized parts $C_1, \dots, C_K$. $C_k$ denotes the indicies of the observations in part $k$. There are $n_k$ observations in part $k$. If $n$ is a multiple of $K$, then $n_k = n/K$. Then let us compute:
+
+\begin{equation}
+	\text{CV}_(K) = \sum^K_{k=1} \frac{n_k}{n} \text{Err}_k
+\end{equation}
+
+where $\text{Err}_k = \sum_{i\in C_k} I (y_i \neq \hat{y}_i)/n_k$
+
+Then the estimated standard deviation of $\text{CV}_k$ is:
+
+\begin{equation}
+	\hat{\text{SE}}( \text{CV}_K) = \sqrt{\sum^K_{k=1}(\text{Err} -\bar{\text{Err}})^2/(K-1)}
+\end{equation}
+
+\end{dBox}
+
+\subsection{Overall Classification accuracy rate}
+
+\begin{def}
+	\textbf{Overall Classification accuracy rate} 
+	\begin{equation}
+		\text{ACC} = 1 - \frac{1}{N} \sum^N_{i=1} I(y_i \neq \hat{y}_i)
+	\end{equation}
+\end{def}
+
+There are several disadvantages:
+
+\begin{enumerate}
+	\item Makes no distinctions about the type of errors being made. In spam filtering, the cost of erroneous deleting an important email is likely to be higher than incorrectly allowing a spam email past a filter. 
+	\item Does not consider the natural frequencies of each class.
+\end{enumerate}
+\subsection{Confusion Matrix}
+\subsection{Sensitivity and Specificity}
+
+\begin{ddef}
+	\textbf{Accuracy} 
+
+	\begin{equation}
+		\text{ACC} = \frac{(TP + TN)}{(TP + FP + FN + TN)}
+	\end{equation}
+\end{ddef}
+
+\begin{ddef}
+	\textbf{Sensitvity}
+
+	\begin{equation}
+		Sen = \frac{TP}{(TP + FN)}
+	\end{equation}
+\end{ddef}
+
+\begin{ddef}
+	\textbf{Specificity}
+
+	\begin{equation}
+		Spe = \frac{TN}{(TN + FP)}
+	\end{equation}
+\end{ddef}
+
+\begin{ddef}
+	\textbf{$F_1$}
+	\begin{equation}
+		F_1 = \frac{2TP}{2TP + FP + FN}
+	\end{equation}
+	which is the harmonic mean
+\end{ddef}
+
+\begin{ddef}
+	\textbf{GM}
+	\begin{equation}
+		GM = \sqrt{\frac{TP}{TP + FN}\frac{TP}{TP+FP}}
+	\end{equation}
+\end{ddef}
+
+\section{The Bootstrap}
+\subsection{Boostrap}
+\begin{ddef}
+	\textbf{Boostrap} The bootstrap is a flexible and powerful statistical tool that can be used to quantify the uncertaintiy associated with a given estimator or statistical learning method. 
+\end{ddef}
+
+For example it can provide an estimate of the standard error of a coeffficien, or a confidence interval for that coeffficient. 
+
+\begin{equation}
+	y_i = \beta_0 + \beta_1x_i  + e_i
+\end{equation}
+
+\subsection{A simple example}
+Suppose that we wish to invest a fixed sum of money in two financial assets that yield returns of $X$ and $Y$, respectively where $X$ and $Y$ are random quantities. We will invest a fraction $\alpha$ of our money in $X$, and will invest the remaining $1-\alpha$ in $Y$. We wish to choose $\alpha$ to minimise the total risk or varaince, of our invesstment. In other words, we want to minimise $\text{Var} (\alpha X + (1 - \alpha)Y)$. We can show that the value that minimises this risk is subsequently given by; 
+
+\begin{equation}
+	\alpha = \frac{\sigma^2_Y - \sigma_{XY}}{\sigma^2_X + \sigma^2_Y - 2\sigma_{XY}}
+\end{equation}
+
+where $\sigma^2_X = \text{Var}(X)$, $\sigma^2_Y = \text{Var}(Y)$ and $\sigma_{XY} = \text{Cov}(X,Y)$. 
+
+But the values of $\sigma^2_X,\sigma^2_Y$ and $\sigma_{XY}$ are unknown. We can compute estimates for these quantites; $\hat{\sigma}^2_{X}, \hat{\sigma}^2_{X}$ and  $\hat{\sigma}_{XY}$, using a data set that contains measurements for $X$ and $Y$. We can then estimate the value of $\alpha$ that minimises the variance of our investment using:
+
+\begin{equation}
+	\hat{\alpha} = \frac{\hat{\sigma}^2_Y - \hat{\sigma}_{XY}}{\hat{\sigma}^2_X + \hat{\sigma}^2_Y - 2\hat{\sigma}_{XY}} 
+\end{equation}
+
+To estimate the standard deviation of $\hat{\alpha}$, we repeated the process of simulating $100$ paired observations of $X$ and $Y$, and estimating $\alpha$ $1000$ times. We thereby obtained $1000$ estimates for $\alpha$, which we can call $\hat{\alpha}_1, \hat{\alpha}_2, \dots , \hat{\alpha}_{1000}$. The mean over all $1000$ estimates for $\alpha$ is:
+
+\begin{equation}
+	\bar{\alpha} = \frac{1}{1000} \sum_{r=1}^{1000} \hat{\alpha}_r = 0.5996
+\end{equation}
+
+very close to $\alpha = 0.6$, and the standard deviation of the estimates is: 
+
+\begin{equation}
+	\sqrt{\frac{1}{1000-1} \sum^{1000}_{r=1} (\hat{\alpha}_r - \bar{\alpha})^2} = 0.083
+\end{equation}
+
+This gives us a very good idea of the accuracy of $\hat{\alpha}$: $\text{SE}(\hat{\alpha}) \approx 0.083$. So roughly speaking, for a random sample from the population, we would expect $\hat{\alpha}$ to differ from $\alpha$ by approximately $0.08$, on average.
+
+\subsection{The real world sitatuon}
+
+The procedure outlined above cannot be applied, because for real data we cannot generate new samples from the original population.
+
+However, the bootstrap approach allws us to use a computer to mimic the process of obtaining new data sets so that we can estimate the variability of our estimate without generating additional samples. Rather than repeatedly obtaining independent data sets from the population, we instead obtain distinct data sets by repeatedly sampling observations from the original data set with replacement.
+Each of these boostrap data sets is created by samping with replacement, and is the same size as our original dataset. As a result some observations may appear more than once in a given boostrap data set and some not at all.
+
+\subsection{Generic Boostrap Procedure}
+
+\begin{dBox}
+Denoting the first boostrap data set by $Z^{*^1}$ we use $Z^{*^1}$ to produce a new boostrap estimate for $\alpha$, which we call $\hat{\alpha}^{*^1}$. This procedure is repeated $B$ times for some large value of $B$ (say 100 or 1000), in order to produce $B$ different boostrap data sets $Z^{*^1} ,Z^{*^2}, \dots, Z^{*^B}$ and $B$ different corresponding $\alpha$ estimates; $\hat{\alpha^{*^1}} \hat{\alpha^{*^2}} \hat{\alpha^{*^B}}$. We estimate the standard error of these boostrap estimates using the formula,
+
+\begin{equation}
+   SE_B(\hat{\alpha}) = \sqrt{\frac{1}{B-1} \sum^B_{r=1}(\alpha^{*^r}- \bar{\hat{\alpha^{*}}})^2}
+\end{equation}
+THis serves as an estimate of the stnadard error of $\hat{\alpha}$ estimated from the original data set.
+\end{dBox}
+
+\section{Tutorial}
+The “breast.txt” dataset contains benign and malignant breast tumour samples. Each sample
+is measured by various factors including:
+\begin{enumerate}
+\item Clump Thickness 
+\item Uniformity of Cell Size
+\item Uniformity of Cell Shape
+\item Marginal Adhesion
+\item Single Epithelial Cell Size
+\item Bare Nuclei
+\item Bland Chromatin
+\item Normal Nucleoli
+\item Mitoses
+\end{enumerate}
+
+The last coclumn contains class lavels with "1" being malignant and "0" as benign:
+
+\begin{enumerate}
+\item Download the breast dataset file from the course webpage
+\begin{solution}
+We first import the dataset
+\begin{Schunk}
+\begin{Sinput}
+> breast <- read.table("breast.txt", sep ="\t", header = TRUE)
+> df <- data.frame(breast)
+> Column.names <- c("Clump_Thickness", "Uniformity_Size", "Uniformity_Shape", 
++ "Marginal_Adhesion", "Single_Ep_Size", "Bare_Nuclei", "Bland_Chromatin", 
++ "Normal_Nucleoli", "Mitoses")
+> colnames(df) <- Column.names
+> 
+\end{Sinput}
+\end{Schunk}
+\end{solution}
+\item Design a 10-fold cross validation procedure to evaluate logistic regression and $k$-NN $k=3$ classification accuracy.
+\begin{solution}
+
+\end{solution}
+\item Calcuate TP, TN, FP, FN and compute sensitivity and specificity for each classifier
+
+\item Compute F1 scare and compare the two classifiers. 
+\end{enumerate}
+\begin{Schunk}
+\begin{Sinput}
+> 
+\end{Sinput}
+\end{Schunk}
+
+\end{document}

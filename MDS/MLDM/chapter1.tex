@@ -1,0 +1,42 @@
+\chapter{Introduction to Machine Learning}
+
+\section{What is Machine Learning?}
+\begin{ddef}
+	\textbf{Machine Learning}: Construction of Statistical models that is an underlying distribution from which the data is drawn, or using which we classify data into different categories. 
+\end{ddef}
+\subsection{Problems in Machine Learning}
+\begin{enumerate}
+	\item Prediction, involving classification and regression
+	\item Clustering, segmentation and summarisation which seeks to find pattterns in data.
+	\item Outlier and anamoly detection, which seeks to find unusual patterns. 
+		
+\end{enumerate}a
+\subsection{Data Representation}
+In the field of Machine Learning there is a variety of data that needs to be interpreted. For a computer to make sense of such data, it must be in a form recognizable to it. Such a data form is a matrix which allows a variety of mappings to occur mathematically, which is desirable for Machine Learning Algorithms.
+\subsubsection{Similarity}
+A special form of a matrix is called the vector, which is a mathematical object belonging in a vector space. 
+
+\begin{ddef}
+	\textbf{Similarity}: Given two vectors $\vect{x}$ and $\vect{y}$, the cosine similarity is given by:
+	\begin{equation}
+		\text{sim}(\vect{x}, \vect{y}) = \frac{\vect{x}\cdot \vect{y}}{\norm{\vect{x}}\norm{\vect{y}}}
+	\end{equation} 
+\end{ddef}
+The cosine similarity has various properties which we list:
+
+\begin{enumerate}
+	\item $\text{sim}(\vect{x}, \vect{y}) = 0$ when $\vect{x} \cdot \vect{y} = 0$ which is when $\vect{x}$ is orthogonal to $\vect{y}$
+	\item $\text{sim}(\vect{x}, \vect{y}) = 1$ when $\vect{x}$ parallel to $\vect{y}$
+	\item $\text{sim}(\vect{x}, \vect{y}) < 0$ when vectors $\vect{x}$ and $\vect{y}$ are diametrically opposed. 
+	\item $\text{sim}(\vect{x}, \vect{y})$ can never be larger than 1 due to the Cauchy-Schwarz Inequality:
+\end{enumerate}
+
+\begin{dBox}
+	\textbf{Cauchy Schwarz Inequality} 
+	For all $\vect{u}$ and $\vect{v}$ in an inner product space then; (in the case of the Euclidean inner product):
+	\begin{equation}
+		|\vect{x} \cdot \vect{y}| \leq \norm{\vect{x}}\norm{\vect{y}}
+		\label{<+label+>}
+	\end{equation}
+
+\end{dBox}

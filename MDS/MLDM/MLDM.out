@@ -1,0 +1,20 @@
+\BOOKMARK [0][-]{chapter.1}{Introduction to Machine Learning}{}% 1
+\BOOKMARK [1][-]{section.1.1}{What is Machine Learning?}{chapter.1}% 2
+\BOOKMARK [2][-]{subsection.1.1.1}{Problems in Machine Learning}{section.1.1}% 3
+\BOOKMARK [2][-]{subsection.1.1.2}{Data Representation}{section.1.1}% 4
+\BOOKMARK [0][-]{chapter.2}{Linear Algebra and Matrix Decompositions}{}% 5
+\BOOKMARK [1][-]{section.2.1}{Vector Spaces}{chapter.2}% 6
+\BOOKMARK [2][-]{subsection.2.1.1}{Orthogonal and Orthonormal Matrices}{section.2.1}% 7
+\BOOKMARK [1][-]{section.2.2}{Linear Dependence and Linear Independence}{chapter.2}% 8
+\BOOKMARK [1][-]{section.2.3}{Determinant}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.4}{Rank of a matrix}{chapter.2}% 10
+\BOOKMARK [1][-]{section.2.5}{Decompositions}{chapter.2}% 11
+\BOOKMARK [1][-]{section.2.6}{Singular Value Decomposition}{chapter.2}% 12
+\BOOKMARK [0][-]{chapter.3}{Basics of Probability Theory and Baye's Rule}{}% 13
+\BOOKMARK [1][-]{section.3.1}{Probability Theory}{chapter.3}% 14
+\BOOKMARK [2][-]{subsection.3.1.1}{Understanding Uncertainty}{section.3.1}% 15
+\BOOKMARK [2][-]{subsection.3.1.2}{How good is the output hs}{section.3.1}% 16
+\BOOKMARK [1][-]{section.3.2}{Probability Basics}{chapter.3}% 17
+\BOOKMARK [2][-]{subsection.3.2.1}{Discrete Random Variables}{section.3.2}% 18
+\BOOKMARK [2][-]{subsection.3.2.2}{Continuous Random Variables}{section.3.2}% 19
+\BOOKMARK [2][-]{subsection.3.2.3}{Probability Densities}{section.3.2}% 20

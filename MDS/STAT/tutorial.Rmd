@@ -1,0 +1,47 @@
+---
+title: "Tutorial Week 1"
+author: "Pengyi Yang"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: html_document
+---
+
+
+# demonstrate how to read in a plain txt file
+```{r}
+dat <- read.delim("/Users/pengyiyang/Dropbox/Teaching & Supervision/STAT500X/STAT5003_PY/Week 1/communities.data", sep=",", header = FALSE);
+names <- read.delim("/Users/pengyiyang/Dropbox/Teaching & Supervision/STAT500X/STAT5003_PY/Week 1/communities.names", head=FALSE)
+```
+
+# identify the 9 most correlated variables to the response variable
+```{r}
+response <- dat[,128]
+summary(response)
+boxplot(response)
+hist(response, xlab="Crime rate", main="Histogram of reported Crime rate")
+sd(response)
+
+# selecting variable containing no missing values
+selected <- (colSums(dat == "?") == 0)
+datComplete <- dat[,selected]
+names[selected,]
+
+# selecting variables that are numeric
+datNumeric <- apply(datComplete[,-2], 2, as.numeric)
+
+
+# use a loop to calculate correlation of each variable to the response variable
+correlationVector <- c()
+for(i in 1:ncol(datNumeric)) {
+  correlationVector <- c(correlationVector, cor(datNumeric[,i], response))
+}
+names(correlationVector) <- colnames(datNumeric)
+
+# sort the variable by correlation from high to low and select the top 9
+newNames<- names[selected,]
+newNames[-2][order(abs(correlationVector), decreasing = TRUE)[1:9]]
+```
+
+
+
+
+

@@ -1,0 +1,15 @@
+\begin{thebibliography}{1}
+
+\bibitem{Kermack700}
+WO~Kermack and AG~McKendrick.
+\newblock A contribution to the mathematical theory of epidemics.
+\newblock {\em Proceedings of the Royal Society of London A: Mathematical,
+  Physical and Engineering Sciences}, 115(772):700--721, 1927.
+
+\bibitem{DBLP:journals/corr/abs-1001-5275}
+Khaled~M. Khalil, M.~Abdel{-}Aziz, Taymour~T. Nazmy, and Abdel{-}Badeeh~M.
+  Salem.
+\newblock An agent-based modeling for pandemic influenza in egypt.
+\newblock {\em CoRR}, abs/1001.5275, 2010.
+
+\end{thebibliography}

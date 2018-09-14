@@ -1,0 +1,12 @@
+\contentsline {section}{\numberline {1}Training error Vs Test error}{1}{section.1}
+\contentsline {subsection}{\numberline {1.1}Validation Set Approach}{1}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Drawbacks of validation set approach}{2}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Overall Classification accuracy rate}{2}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}Confusion Matrix}{3}{subsection.1.4}
+\contentsline {subsection}{\numberline {1.5}Sensitivity and Specificity}{3}{subsection.1.5}
+\contentsline {section}{\numberline {2}The Bootstrap}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}Boostrap}{3}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}A simple example}{4}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}The real world sitatuon}{4}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Generic Boostrap Procedure}{5}{subsection.2.4}
+\contentsline {section}{\numberline {3}Tutorial}{5}{section.3}

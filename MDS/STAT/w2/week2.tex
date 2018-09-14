@@ -1,0 +1,221 @@
+\documentclass[twoside]{article}
+\usepackage{mdframed}
+\usepackage[hmarginratio=1:1,top=32mm,columnsep=20pt]{geometry} % Document margins
+\usepackage{multicol} % Used for the two-column layout of the document
+\usepackage[hang, small,labelfont=bf,up,textfont=it,up]{caption} % Custom captions under/above floats in tables or figures
+\usepackage{booktabs} % Horizontal rules in tables
+\usepackage{float} % Required for tables and figures in the multi-column environment - they need to be placed in specific locations with the [H] (e.g. \begin{table}[H])
+\usepackage{hyperref} % For hyperlinks in the PDF
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{lettrine} % The lettrine is the first enlarged letter at the beginning of the text
+\usepackage{paralist} % Used for the compactitem environment which makes bullet points with less space between them
+\usepackage{tikz}
+\usepackage{esint}
+\usepackage{centernot}
+\usepackage{lmodern}
+\usetikzlibrary{3d}
+\usetikzlibrary{patterns,calc,hobby}
+\usetikzlibrary{decorations.pathreplacing}
+\tikzset{
+	partial ellipse/.style args={#1:#2:#3}{
+		insert path={+ (#1:#3) arc (#1:#2:#3)}
+	}
+}
+\usepackage{xcolor}
+
+\usepackage{fancyhdr} % Headers and footers
+\pagestyle{fancy} % All pages have headers and footers
+\fancyhead{} % Blank out the default header
+\fancyfoot{} % Blank out the default footer
+\fancyhead[C]{Jimmy Yue $\bullet$ Statistics $\bullet$ Jimmy Yue} % Custom header text
+\fancyfoot[RO,LE]{\thepage} % Custom footer text
+
+\newmdenv[skipabove=7pt,
+rightline=false,
+leftline=true,
+topline=false,
+bottomline=false,
+skipbelow=5pt,
+linecolor=black,
+innerleftmargin=5pt,
+innerrightmargin=5pt,
+innertopmargin=5pt,
+leftmargin=0cm,
+rightmargin=0cm,
+linewidth=4pt,
+innerbottommargin=5pt]{cBox}
+
+\theoremstyle{definition}
+\newtheorem*{solutionT}{Solution}
+
+\newenvironment{solution}{\begin{cBox}\begin{solutionT}}{\hfill{\scriptsize\ensuremath{\square}}\end{solutionT}\end{cBox}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\vect}[1]{\vec{\pmb{#1}}}
+\newcommand{\uvect}[1]{\hat{\mathbf{#1}}}
+\newcommand{\leviciv}{\epsilon_{ijk}}
+
+\newmdenv[skipabove=7pt,
+rightline=false,
+leftline=true,
+topline=false,
+bottomline=false,
+skipbelow=5pt,
+linecolor=black,
+innerleftmargin=5pt,
+innerrightmargin=5pt,
+innertopmargin=5pt,
+leftmargin=0cm,
+rightmargin=0cm,
+linewidth=4pt,
+innerbottommargin=7,
+backgroundcolor=light-gray]{dBox}
+
+
+
+\theoremstyle{definition}
+\newtheorem*{proof1}{Definition}
+
+\newenvironment{ddef}{\begin{dBox}\begin{proof1}}{\hfill{\scriptsize}\end{proof1}\end{dBox}}
+\newcommand{\pdif}[2]{\frac{\partial#1}{\partial#2}}
+\definecolor{light-gray}{gray}{0.85}
+%----------------------------------------------------------------------------------------
+%-	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\title{\vspace{-15mm}\fontsize{24pt}{10pt}\selectfont\textbf{Statistics - Week 2}} % Article title
+
+\author{
+\large
+\textsc{Jimmy Tsz Ming Yue}\thanks{440159151}\\[2mm] % Your name
+\normalsize University of Sydney \\ % Your institution
+\normalsize \href{mailto:jyue6728@uni.sydney.edu.au}{jyue6728@uni.sydney.edu.au} % Your email address
+\vspace{-5mm}
+}
+\date{}
+
+%----------------------------------------------------------------------------------------
+
+\usepackage{Sweave}
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+\maketitle % Insert title
+
+\thispagestyle{fancy} % All pages have headers and footers
+\hrule \smallskip
+
+\noindent Semester 2 \quad Statistics \hspace{10.5
+cm} 2018
+\smallskip
+\hrule
+\smallskip
+\tableofcontents
+\section{What is clustering?}
+
+\begin{ddef}
+	Clustering are methods of grouping samples $(x)$ that are similar in nature, according to some pre-defined criteria. It is a form of unsupervised learning, in that there is no label information $(y)$ to tell the algorithm which observations should be grouped together. As such it is often used for exploratory data analysis: for which we can look at patters or structures in the data set which may be of particular interest to us. 
+\end{ddef}
+\section{Basic Principles of Clustering}
+
+In clustering, we aim to group observations that are similar. There are certain issues that arise from this , which include consideration of the data types, the prescence of missing data, scaling and the similarity metric that we chose in doing our clustering. Examples of such metrics are: Euclidean, Manhattan, Pearson correlation, Spearman correlation. To do clustering we can employ many different algorithms, such as: Hierarchical clustering, K-means clustering, Fuzzy c-means clustering, semi-supervised clustering and bi-clustering.
+
+\section{Commonly used similarity measures}
+
+\begin{ddef}
+	\textbf{Metric}: A metric is a measure of the similarity or dissimilarity between two data objects and it is used to form data points into cluster. (Formally speaking a metric is a measure of the distance within a metric space). We have:
+
+	\begin{enumerate}
+		\item Correlation Coefficients, which compares the shape of expression curves; (Pearson's Correlation Coefficient):
+			\begin{align}
+				\rho(x,y) & = \frac{\sum^n_{i=1}(x_i-\bar{x})(y_i-\bar{y})}{\sqrt{\sum^n_{i=1}(x_i-\bar{x})^2}\sqrt{\sum^n_{i=1}(y_i-\bar{y})^2}}\\
+				d_p & = \frac{1-\rho(x,y)}{2}
+			\end{align}
+		\item Distance Metrics, where we have; 
+			\begin{enumerate}
+				\item Manhattan distance;
+
+					\begin{align*}
+						d(X,Y) = \sum_i|x_i - y_i|
+					\end{align*}
+				\item Euclidean distance;
+					\begin{align*}
+					d(x,y) = \sqrt{\sum^n_{i=1} (x_i - y_i)^2}
+				\end{align*}
+			\end{enumerate}
+
+	\end{enumerate}
+	We also have Spearman's and Kendall's correlation which we can use to define our metrics. We can use absolute correlation to capture both positive and negative correlation. 
+\end{ddef}
+\section{Distances between clusters}
+We can choose different measures for measuring between clusters, with:
+\begin{enumerate}
+	\item Single: Which measures the closest distance between two clusters
+	\item Complete: Which measures the maximum distance between two clusters
+	\item Distance between centroids, which measures between the centroid of two clusters
+	\item Average Linkage: Which takes the average distance between clusters. 
+\end{enumerate}
+\section{Clustering Algorithms}
+We have two different flavours of clusterings;
+\begin{enumerate}
+	\item Partitioning
+	\item Hierarchical
+\end{enumerate}
+
+\subsection{Hierarchical methods}
+Hierarchical clustering methods produce a tree or dendrogram. They avoid specifying how many clusters are approrpriate by providing a partition for each $k$ obtained from cutting the tree at some level. An example of hierarchical clustering is the bottom-up tree buidling. This is done as follows:
+
+\begin{dBox}
+	\textbf{Bottom-Up Tree building procedure}
+	\begin{enumerate}
+		\item Let us start with $n$ samples for which we generate $n$ clusters.
+		\item At each step, we merge the two closest clusters using a measure of between-cluster dissimilarity which reflects the shape of the clusters. (We may use different measures of distance as outlined above) 
+	\end{enumerate}
+\end{dBox}
+
+Let us give some examples first with some R code of the crime data given last week then with Gene expression data;
+
+\begin{cBox}
+	
+\end{cBox}
+
+\begin{cBox}
+	
+\end{cBox}
+
+\subsection{Partitioning methods}
+Partitioning clustering methods seeks to partition the data into pre-specified number $k$ of mutually exclusive and exhuastive groups. This is done through iteratively reallocating the observations to clusters until some critierion is met, for example the minimisation of cluster sums of squares. 
+
+\begin{dBox}
+	\textbf{Typical Clustering Algorithm}
+	\begin{enumerate}
+		\item Choose $k$ objects as the initial cluster centers
+		\item Until no change, 
+		\item Reassign each object to the cluster to which the object is the most similar, based on the mean value of the objects in the cluster.
+		\item Update the cluster means, 
+	\end{enumerate}
+\end{dBox}
+
+\subsubsection{Problems with $k$-means}
+There are some issues with paritioning, namely the prescence of outliers. For example, objects with extremely large values may substantially distort the distribution of data. 
+
+\section{Tutorial 2}
+
+The "ClueR" R package contains a time-course phosphoproteomics dataset "hES". Each
+column of in hES data is a time point and each row is a phosphorylation sites. We will
+perform clustering analysis on this dataset.
+
+\begin{enumerate}
+  \item Install “ClueR” R package and its dependent packages. Find out how to use it by
+typing “?runClue”.
+
+\item Once you have installed the package load the hES dataset as follows:
+
+data(hES)
+Find out the dimension of the hES dataset.
+
+\item Create hierarchical clustering with respect to times (i.e. cluster the columns). How
+does time points cluster with each other? Does it make sense?
+
+\item 1
+\end{enumerate}
+\end{document}
