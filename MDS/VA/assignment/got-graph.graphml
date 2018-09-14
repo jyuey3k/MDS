@@ -5,8 +5,8 @@
     <key attr.name="name" attr.type="string" for="node" id="name"/>
     <key attr.name="group" attr.type="string" for="node" id="group"/>
     <key attr.name="house-marriage" attr.type="string" for="node" id="house-marriage"/>
-    <key attr.name="relation" attr.type="string" id="relation"/>
-    <key attr.name="type" attr.type="string" id="type"/>
+    <key attr.name="relation" attr.type="string" for="edge" id="relation"/>
+    <key attr.name="type" attr.type="string" for="edge" id="type"/>
     <graph edgedefault="directed" id="">
         <node id="0">
             <data key="status">Alive</data>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<styles>
+  <style name="Naming" scope="node" selectionOnly="false">
+    <mapping>
+      <source name="name" origin="customProperty" type="string"/>
+      <target name="labelText" type="string">
+        <hints>
+          <hint type="int">0</hint>
+        </hints>
+      </target>
+      <conversion type="discrete"/>
+    </mapping>
+    <mapping>
+      <source name="name" origin="customProperty" type="string"/>
+      <target name="labelText" type="string">
+        <hints>
+          <hint type="int">0</hint>
+        </hints>
+      </target>
+      <conversion type="asIs"/>
+    </mapping>
+  </style>
+  <style name="House colours" scope="node" selectionOnly="false">
+    <mapping>
+      <source name="house-birth" origin="customProperty" type="string"/>
+      <target name="fillColor" type="color">
+        <hints/>
+      </target>
+      <conversion type="discrete">
+        <discrete>
+          <value>House Baelish</value>
+          <result>#339966</result>
+        </discrete>
+        <discrete>
+          <value>House Arryn</value>
+          <result>#66ccff</result>
+        </discrete>
+        <discrete>
+          <value>House Baratheon</value>
+          <result>#993300</result>
+        </discrete>
+        <discrete>
+          <value>House Bolton</value>
+          <result>#999999</result>
+        </discrete>
+        <discrete>
+          <value>House Clegane</value>
+          <result>#ffff00</result>
+        </discrete>
+        <discrete>
+          <value>House Dayne</value>
+          <result>#cc99ff</result>
+        </discrete>
+        <discrete>
+          <value>House Dondarrion</value>
+          <result>#993366</result>
+        </discrete>
+        <discrete>
+          <value>House Frey</value>
+          <result>#3366ff</result>
+        </discrete>
+        <discrete>
+          <value>House Greyjoy</value>
+          <result>#c0c0c0</result>
+        </discrete>
+        <discrete>
+          <value>House Lannister</value>
+          <result>#ff0000</result>
+        </discrete>
+        <discrete>
+          <value>House Martell</value>
+          <result>#ff6600</result>
+        </discrete>
+        <discrete>
+          <value>House Mormont</value>
+          <result>#99cc00</result>
+        </discrete>
+        <discrete>
+          <value>House Payne</value>
+          <result>#ffff99</result>
+        </discrete>
+        <discrete>
+          <value>House Reed</value>
+          <result>#99ff99</result>
+        </discrete>
+        <discrete>
+          <value>House Stark</value>
+          <result>#ccdeff</result>
+        </discrete>
+        <discrete>
+          <value>House Targaryen</value>
+          <result>#ff0099</result>
+        </discrete>
+        <discrete>
+          <value>House Tarth</value>
+          <result>#33cccc</result>
+        </discrete>
+        <discrete>
+          <value>House Thorne</value>
+          <result>#ffcc99</result>
+        </discrete>
+        <discrete>
+          <value>House Tully</value>
+          <result>#0000ff</result>
+        </discrete>
+        <discrete>
+          <value>Sand Snakes</value>
+          <result>#666600</result>
+        </discrete>
+      </conversion>
+    </mapping>
+    <mapping>
+      <source name="house-marriage" origin="customProperty" type="string"/>
+      <target name="fillColor2" type="color">
+        <hints/>
+      </target>
+      <conversion type="discrete">
+        <discrete>
+          <value>House Baelish</value>
+          <result>#339966</result>
+        </discrete>
+        <discrete>
+          <value>House Arryn</value>
+          <result>#66ccff</result>
+        </discrete>
+        <discrete>
+          <value>House Baratheon</value>
+          <result>#993300</result>
+        </discrete>
+        <discrete>
+          <value>House Bolton</value>
+          <result>#999999</result>
+        </discrete>
+        <discrete>
+          <value>House Clegane</value>
+          <result>#ffff00</result>
+        </discrete>
+        <discrete>
+          <value>House Dayne</value>
+          <result>#cc99ff</result>
+        </discrete>
+        <discrete>
+          <value>House Dondarrion</value>
+          <result>#993366</result>
+        </discrete>
+        <discrete>
+          <value>House Frey</value>
+          <result>#3366ff</result>
+        </discrete>
+        <discrete>
+          <value>House Greyjoy</value>
+          <result>#c0c0c0</result>
+        </discrete>
+        <discrete>
+          <value>House Lannister</value>
+          <result>#ff0000</result>
+        </discrete>
+        <discrete>
+          <value>House Martell</value>
+          <result>#ff6600</result>
+        </discrete>
+        <discrete>
+          <value>House Mormont</value>
+          <result>#99cc00</result>
+        </discrete>
+        <discrete>
+          <value>House Payne</value>
+          <result>#ffff99</result>
+        </discrete>
+        <discrete>
+          <value>House Reed</value>
+          <result>#99ff99</result>
+        </discrete>
+        <discrete>
+          <value>House Stark</value>
+          <result>#ccdeff</result>
+        </discrete>
+        <discrete>
+          <value>House Targaryen</value>
+          <result>#ff0099</result>
+        </discrete>
+        <discrete>
+          <value>House Tarth</value>
+          <result>#33cccc</result>
+        </discrete>
+        <discrete>
+          <value>House Thorne</value>
+          <result>#ffcc99</result>
+        </discrete>
+        <discrete>
+          <value>House Tully</value>
+          <result>#0000ff</result>
+        </discrete>
+        <discrete>
+          <value>Sand Snakes</value>
+          <result>#666600</result>
+        </discrete>
+      </conversion>
+    </mapping>
+  </style>
+</styles>

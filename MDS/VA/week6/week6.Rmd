@@ -1,0 +1,27 @@
+---
+title: "week6"
+output: html_document
+---
+
+```{r}
+library(igraph)
+```
+
+```{r}
+g = graph("Zachary") 
+E(g)
+V(g)
+summary(g)
+coreness(g,mode = "all")
+degree(g,mode = "all")
+layout_with_fr(g)
+plot(g,layout=layout_with_fr(g))
+```
+
+```{r}
+library(networkD3)
+data("MisLinks")
+data("MisNodes")
+forceNetwork(Links = MisLinks, Nodes = MisNodes, Source = "source", Targe = "target", Value = "value", NodeID = "name", Nodesize = "size", Group = "group", opacity = 0.8, zoom = TRUE, legend = TRUE)
+```
+

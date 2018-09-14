@@ -1,0 +1,1895 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:java="http://www.yworks.com/xml/yfiles-common/1.0/java" xmlns:sys="http://www.yworks.com/xml/yfiles-common/markup/primitives/2.0" xmlns:x="http://www.yworks.com/xml/yfiles-common/markup/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:y="http://www.yworks.com/xml/graphml" xmlns:yed="http://www.yworks.com/xml/yed/3" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/xml/schema/graphml/1.1/ygraphml.xsd">
+  <!--Created by yEd 3.18.1.1-->
+  <key for="port" id="d0" yfiles.type="portgraphics"/>
+  <key for="port" id="d1" yfiles.type="portgeometry"/>
+  <key for="port" id="d2" yfiles.type="portuserdata"/>
+  <key attr.name="status" attr.type="string" for="node" id="d3"/>
+  <key attr.name="house-birth" attr.type="string" for="node" id="d4"/>
+  <key attr.name="name" attr.type="string" for="node" id="d5"/>
+  <key attr.name="group" attr.type="string" for="node" id="d6"/>
+  <key attr.name="house-marriage" attr.type="string" for="node" id="d7"/>
+  <key attr.name="url" attr.type="string" for="node" id="d8"/>
+  <key attr.name="description" attr.type="string" for="node" id="d9"/>
+  <key for="node" id="d10" yfiles.type="nodegraphics"/>
+  <key for="graphml" id="d11" yfiles.type="resources"/>
+  <key attr.name="relation" attr.type="string" for="edge" id="d12"/>
+  <key attr.name="type" attr.type="string" for="edge" id="d13"/>
+  <key attr.name="url" attr.type="string" for="edge" id="d14"/>
+  <key attr.name="description" attr.type="string" for="edge" id="d15"/>
+  <key for="edge" id="d16" yfiles.type="edgegraphics"/>
+  <graph edgedefault="directed" id="G">
+    <node id="n0">
+      <data key="d3" xml:space="preserve"><![CDATA[Alive]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[House Arryn]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Robin Arryn]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="1249.7700195312495" y="463.5"/>
+          <y:Fill color="#3366FF" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="73.041015625" x="-21.5205078125" xml:space="preserve" y="5.93359375">Robin Arryn<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="ellipse"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n1">
+      <data key="d3" xml:space="preserve"><![CDATA[Alive]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[House Clegane]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Gregor Clegane]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="446.972890625" y="9.0"/>
+          <y:Fill color="#339966" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="94.52734375" x="-32.263671875" xml:space="preserve" y="5.93359375">Gregor Clegane<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="ellipse"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n2">
+      <data key="d3" xml:space="preserve"><![CDATA[Alive]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[House Clegane]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Sandor Clegane]]></data>
+      <data key="d6" xml:space="preserve"><![CDATA[Brotherhood Without Banners]]></data>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="320.47289062500005" y="9.0"/>
+          <y:Fill color="#339966" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="94.8671875" x="-32.43359375" xml:space="preserve" y="5.93359375">Sandor Clegane<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="ellipse"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n3">
+      <data key="d3" xml:space="preserve"><![CDATA[Alive]]></data>
+      <data key="d4" xml:space="preserve"/>
+      <data key="d5" xml:space="preserve"><![CDATA[Drogon]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="60.32424999999999" y="505.0"/>
+          <y:Fill color="#C0C0C0" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="47.5703125" x="-8.78515625" xml:space="preserve" y="5.93359375">Drogon<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="ellipse"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n4">
+      <data key="d3" xml:space="preserve"><![CDATA[Alive]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[House Baratheon]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Gendry]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="525.432890625" y="707.0"/>
+          <y:Fill color="#0000FF" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="45.537109375" x="-7.7685546875" xml:space="preserve" y="5.93359375">Gendry<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="ellipse"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n5">
+      <data key="d3" xml:space="preserve"><![CDATA[Alive]]></data>
+      <data key="d4" xml:space="preserve"/>
+      <data key="d5" xml:space="preserve"><![CDATA[Ghost]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="379.15625" y="707.0"/>
+          <y:Fill color="#C0C0C0" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="38.095703125" x="-4.0478515625" xml:space="preserve" y="5.93359375">Ghost<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="ellipse"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n6">
+      <data key="d3" xml:space="preserve"><![CDATA[Alive]]></data>
+      <data key="d4" xml:space="preserve"/>
+      <data key="d5" xml:space="preserve"><![CDATA[Grey Worm]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="525.432890625" y="505.0"/>
+          <y:Fill color="#C0C0C0" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="68.083984375" x="-19.0419921875" xml:space="preserve" y="5.93359375">Grey Worm<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="ellipse"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n7">
+      <data key="d3" xml:space="preserve"><![CDATA[Alive]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[House Greyjoy]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Aeron Greyjoy]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="1249.7700195312495" y="415.0"/>
+          <y:Fill color="#00FF00" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="86.318359375" x="-28.1591796875" xml:space="preserve" y="5.93359375">Aeron Greyjoy<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="ellipse"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n8">
+      <data key="d3" xml:space="preserve"><![CDATA[Alive]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[House Greyjoy]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Euron Greyjoy]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="1098.0634765624995" y="410.0"/>
+          <y:Fill color="#00FF00" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="85.3046875" x="-27.65234375" xml:space="preserve" y="5.93359375">Euron Greyjoy<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="ellipse"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n9">
+      <data key="d3" xml:space="preserve"><![CDATA[Alive]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[House Greyjoy]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Theon Greyjoy]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="612.472890625" y="237.92187500000006"/>
+          <y:Fill color="#00FF00" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="88.1640625" x="-29.08203125" xml:space="preserve" y="5.93359375">Theon Greyjoy<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="ellipse"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n10">
+      <data key="d3" xml:space="preserve"><![CDATA[Alive]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[House Greyjoy]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Yara Greyjoy]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="40.0" width="40.0" x="490.613515625" y="278.921875"/>
+          <y:Fill color="#00FF00" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="77.265625" x="-18.6328125" xml:space="preserve" y="10.93359375">Yara Greyjoy<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="ellipse"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n11">
+      <data key="d3" xml:space="preserve"><![CDATA[Alive]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[House Targaryen]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Jon Snow]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="70.0" width="70.0" x="433.71624999999995" y="597.0"/>
+          <y:Fill color="#FF0000" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="56.875" x="6.5625" xml:space="preserve" y="25.93359375">Jon Snow<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="ellipse"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n12">
+      <data key="d3" xml:space="preserve"><![CDATA[Alive]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[House Lannister]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Cersei Lannister]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="50.0" width="50.0" x="310.47289062500005" y="106.99999999999994"/>
+          <y:Fill color="#FFFF00" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="97.556640625" x="-23.7783203125" xml:space="preserve" y="15.93359375">Cersei Lannister<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="ellipse"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n13">
+      <data key="d3" xml:space="preserve"><![CDATA[Alive]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[House Lannister]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Jaime Lannister]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="1534.6308593749995" y="308.0"/>
+          <y:Fill color="#FFFF00" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="93.103515625" x="-31.5517578125" xml:space="preserve" y="5.93359375">Jaime Lannister<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="ellipse"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n14">
+      <data key="d3" xml:space="preserve"><![CDATA[Alive]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[House Lannister]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Tyrion Lannister]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="367.71625" y="505.0"/>
+          <y:Fill color="#FFFF00" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="98.44140625" x="-34.220703125" xml:space="preserve" y="5.93359375">Tyrion Lannister<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="ellipse"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n15">
+      <data key="d3" xml:space="preserve"><![CDATA[Alive]]></data>
+      <data key="d4" xml:space="preserve"/>
+      <data key="d5" xml:space="preserve"><![CDATA[Melisandre]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="453.71624999999995" y="505.0"/>
+          <y:Fill color="#C0C0C0" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="67.298828125" x="-18.6494140625" xml:space="preserve" y="5.93359375">Melisandre<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="ellipse"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n16">
+      <data key="d3" xml:space="preserve"><![CDATA[Alive]]></data>
+      <data key="d4" xml:space="preserve"/>
+      <data key="d5" xml:space="preserve"><![CDATA[Missandei]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="597.1495312500001" y="505.0"/>
+          <y:Fill color="#C0C0C0" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="61.8203125" x="-15.91015625" xml:space="preserve" y="5.93359375">Missandei<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="ellipse"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n17">
+      <data key="d3" xml:space="preserve"><![CDATA[Alive]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[House Mormont]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Jorah Mormont]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="138.74025" y="505.0"/>
+          <y:Fill color="#FFFFCC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="91.01171875" x="-30.505859375" xml:space="preserve" y="5.93359375">Jorah Mormont<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="ellipse"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n18">
+      <data key="d3" xml:space="preserve"><![CDATA[Alive]]></data>
+      <data key="d4" xml:space="preserve"/>
+      <data key="d5" xml:space="preserve"><![CDATA[Night King]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="40.0" width="40.0" x="656.3794335937499" y="612.0"/>
+          <y:Fill color="#C0C0C0" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="65.78125" x="-12.890625" xml:space="preserve" y="10.93359375">Night King<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="ellipse"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n19">
+      <data key="d3" xml:space="preserve"><![CDATA[Alive]]></data>
+      <data key="d4" xml:space="preserve"/>
+      <data key="d5" xml:space="preserve"><![CDATA[Nymeria]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="379.15625" y="796.9999999999999"/>
+          <y:Fill color="#C0C0C0" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="52.029296875" x="-11.0146484375" xml:space="preserve" y="5.93359375">Nymeria<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="ellipse"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n20">
+      <data key="d3" xml:space="preserve"><![CDATA[Alive]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[House Payne]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Ilyn Payne]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="196.11625000000004" y="9.0"/>
+          <y:Fill color="#9999FF" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="62.1015625" x="-16.05078125" xml:space="preserve" y="5.93359375">Ilyn Payne<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="ellipse"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n21">
+      <data key="d3" xml:space="preserve"><![CDATA[Alive]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[House Payne]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Podrick Payne]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="55.32424999999999" y="-151.0"/>
+          <y:Fill color="#9999FF" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="84.5546875" x="-27.27734375" xml:space="preserve" y="5.93359375">Podrick Payne<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="ellipse"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n22">
+      <data key="d3" xml:space="preserve"><![CDATA[Alive]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[House Reed]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Howland Reed]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="565.4091796875" y="162.99999999999994"/>
+          <y:Fill color="#00FFFF" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="86.83984375" x="-28.419921875" xml:space="preserve" y="5.93359375">Howland Reed<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="ellipse"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n23">
+      <data key="d3" xml:space="preserve"><![CDATA[Alive]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[House Reed]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Meera Reed]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="605.1621093749998" y="796.9999999999999"/>
+          <y:Fill color="#00FFFF" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="71.552734375" x="-20.7763671875" xml:space="preserve" y="5.93359375">Meera Reed<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="ellipse"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n24">
+      <data key="d3" xml:space="preserve"><![CDATA[Alive]]></data>
+      <data key="d4" xml:space="preserve"/>
+      <data key="d5" xml:space="preserve"><![CDATA[Rhaegal]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="289.15625" y="505.0"/>
+          <y:Fill color="#C0C0C0" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="49.92578125" x="-9.962890625" xml:space="preserve" y="5.93359375">Rhaegal<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="ellipse"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n25">
+      <data key="d3" xml:space="preserve"><![CDATA[Alive]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[Sand Snakes]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Ellaria Sand]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="226.11625000000004" y="505.0"/>
+          <y:Fill color="#CCFFFF" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="70.9609375" x="-20.48046875" xml:space="preserve" y="5.93359375">Ellaria Sand<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="ellipse"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n26">
+      <data key="d3" xml:space="preserve"><![CDATA[Alive]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[House Stark]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Arya Stark]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="40.0" width="40.0" x="374.15625" y="866.9999999999999"/>
+          <y:Fill color="#FF00FF" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="63.384765625" x="-11.6923828125" xml:space="preserve" y="10.93359375">Arya Stark<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="ellipse"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n27">
+      <data key="d3" xml:space="preserve"><![CDATA[Alive]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[House Stark]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Bran Stark]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="40.0" width="40.0" x="525.162109375" y="866.9999999999999"/>
+          <y:Fill color="#FF00FF" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="63.185546875" x="-11.5927734375" xml:space="preserve" y="10.93359375">Bran Stark<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="ellipse"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n28">
+      <data key="d3" xml:space="preserve"><![CDATA[Alive]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[House Stark]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Sansa Stark]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="40.0" width="40.0" x="147.75390625" y="866.9999999999999"/>
+          <y:Fill color="#FF00FF" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="70.580078125" x="-15.2900390625" xml:space="preserve" y="10.93359375">Sansa Stark<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="ellipse"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n29">
+      <data key="d3" xml:space="preserve"><![CDATA[Alive]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[House Targaryen]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Daenerys Targaryen]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="140.0" width="140.0" x="269.15625" y="294.99999999999994"/>
+          <y:Fill color="#FF0000" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="120.07421875" x="9.962890625" xml:space="preserve" y="60.93359375">Daenerys Targaryen<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="ellipse"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n30">
+      <data key="d3" xml:space="preserve"><![CDATA[Alive]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[House Tarth]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Brienne of Tarth]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="40.0" width="40.0" x="50.32424999999999" y="-81.0"/>
+          <y:Fill color="#FF9999" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="97.984375" x="-28.9921875" xml:space="preserve" y="10.93359375">Brienne of Tarth<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="ellipse"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n31">
+      <data key="d3" xml:space="preserve"><![CDATA[Alive]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[House Tully]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Edmure Tully]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="1391.6249999999995" y="415.0"/>
+          <y:Fill color="#FF9900" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="80.341796875" x="-25.1708984375" xml:space="preserve" y="5.93359375">Edmure Tully<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="ellipse"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n32">
+      <data key="d3" xml:space="preserve"><![CDATA[Deceased]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[House Arryn]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Jon Arryn]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="529.116640625" y="9.0"/>
+          <y:Fill color="#3366FF" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="58.1640625" x="-14.08203125" xml:space="preserve" y="5.93359375">Jon Arryn<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n33">
+      <data key="d3" xml:space="preserve"><![CDATA[Deceased]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[House Tully]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Lysa Arryn]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"><![CDATA[House Arryn]]></data>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="25.0" width="25.0" x="1537.1308593749995" y="415.0"/>
+          <y:Fill color="#FF9900" transparent="false"/>
+          <y:BorderStyle color="#008080" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="65.025390625" x="-20.0126953125" xml:space="preserve" y="3.43359375">Lysa Arryn<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n34">
+      <data key="d3" xml:space="preserve"><![CDATA[Deceased]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[House Baelish]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Petyr Baelish]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"><![CDATA[House Arryn]]></data>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="25.0" width="25.0" x="1537.1308593749995" y="464.75"/>
+          <y:Fill color="#C0C0C0" transparent="false"/>
+          <y:BorderStyle color="#008080" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="77.5" x="-26.25" xml:space="preserve" y="3.43359375">Petyr Baelish<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n35">
+      <data key="d3" xml:space="preserve"><![CDATA[Deceased]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[House Baratheon]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Joffrey Baratheon]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="60.0" width="60.0" x="196.11625" y="101.99999999999994"/>
+          <y:Fill color="#0000FF" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="104.095703125" x="-22.0478515625" xml:space="preserve" y="20.93359375">Joffrey Baratheon<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n36">
+      <data key="d3" xml:space="preserve"><![CDATA[Deceased]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[House Baratheon]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Myrcella Baratheon]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="1248.6191406249995" y="254.5"/>
+          <y:Fill color="#0000FF" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="114.21484375" x="-42.107421875" xml:space="preserve" y="5.93359375">Myrcella Baratheon<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n37">
+      <data key="d3" xml:space="preserve"><![CDATA[Deceased]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[House Baratheon]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Robert Baratheon]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="80.0" width="80.0" x="421.972890625" y="-143.99999999999994"/>
+          <y:Fill color="#0000FF" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="104.8984375" x="-12.44921875" xml:space="preserve" y="30.93359375">Robert Baratheon<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n38">
+      <data key="d3" xml:space="preserve"><![CDATA[Deceased]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[House Baratheon]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Shireen Baratheon]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="1103.0634765624995" y="254.5"/>
+          <y:Fill color="#0000FF" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="109.41015625" x="-39.705078125" xml:space="preserve" y="5.93359375">Shireen Baratheon<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n39">
+      <data key="d3" xml:space="preserve"><![CDATA[Deceased]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[House Baratheon]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Stannis Baratheon]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="1391.6249999999995" y="254.5"/>
+          <y:Fill color="#0000FF" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="108.361328125" x="-39.1806640625" xml:space="preserve" y="5.93359375">Stannis Baratheon<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n40">
+      <data key="d3" xml:space="preserve"><![CDATA[Deceased]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[House Baratheon]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Tommen Baratheon]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="40.0" width="40.0" x="428.097890625" y="111.99999999999994"/>
+          <y:Fill color="#0000FF" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="117.80078125" x="-38.900390625" xml:space="preserve" y="10.93359375">Tommen Baratheon<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n41">
+      <data key="d3" xml:space="preserve"><![CDATA[Deceased]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[House Bolton]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Ramsay Bolton]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="1534.6308593749995" y="361.5"/>
+          <y:Fill color="#CCFFCC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="89.27734375" x="-29.638671875" xml:space="preserve" y="5.93359375">Ramsay Bolton<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n42">
+      <data key="d3" xml:space="preserve"><![CDATA[Deceased]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[House Bolton]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Roose Bolton]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="55.32424999999999" y="209.0"/>
+          <y:Fill color="#CCFFCC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="79.978515625" x="-24.9892578125" xml:space="preserve" y="5.93359375">Roose Bolton<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n43">
+      <data key="d3" xml:space="preserve"><![CDATA[Deceased]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[House Dayne]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Arthur Dayne]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="55.32424999999999" y="59.0"/>
+          <y:Fill color="#CCFFFF" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="81.296875" x="-25.6484375" xml:space="preserve" y="5.93359375">Arthur Dayne<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n44">
+      <data key="d3" xml:space="preserve"><![CDATA[Deceased]]></data>
+      <data key="d4" xml:space="preserve"/>
+      <data key="d5" xml:space="preserve"><![CDATA[Drogo]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"><![CDATA[House Targaryen]]></data>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="25.0" width="25.0" x="1252.2700195312495" y="517.0"/>
+          <y:Fill color="#C0C0C0" transparent="false"/>
+          <y:BorderStyle color="#FF6666" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="40.123046875" x="-7.5615234375" xml:space="preserve" y="3.43359375">Drogo<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n45">
+      <data key="d3" xml:space="preserve"><![CDATA[Deceased]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[House Frey]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Walder Frey]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="40.0" width="40.0" x="50.32424999999999" y="279.0"/>
+          <y:Fill color="#CCCCFF" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="71.60546875" x="-15.802734375" xml:space="preserve" y="10.93359375">Walder Frey<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n46">
+      <data key="d3" xml:space="preserve"><![CDATA[Deceased]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[House Greyjoy]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Balon Greyjoy]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="320.47289062500005" y="201.99999999999994"/>
+          <y:Fill color="#00FF00" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="83.44140625" x="-26.720703125" xml:space="preserve" y="5.93359375">Balon Greyjoy<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n47">
+      <data key="d3" xml:space="preserve"><![CDATA[Deceased]]></data>
+      <data key="d4" xml:space="preserve"/>
+      <data key="d5" xml:space="preserve"><![CDATA[Grey Wind]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="268.1455078125" y="796.9999999999999"/>
+          <y:Fill color="#C0C0C0" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="63.068359375" x="-16.5341796875" xml:space="preserve" y="5.93359375">Grey Wind<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n48">
+      <data key="d3" xml:space="preserve"><![CDATA[Deceased]]></data>
+      <data key="d4" xml:space="preserve"/>
+      <data key="d5" xml:space="preserve"><![CDATA[High Sparrow]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="1391.6249999999995" y="622.0"/>
+          <y:Fill color="#C0C0C0" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="82.09375" x="-26.046875" xml:space="preserve" y="5.93359375">High Sparrow<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n49">
+      <data key="d3" xml:space="preserve"><![CDATA[Deceased]]></data>
+      <data key="d4" xml:space="preserve"/>
+      <data key="d5" xml:space="preserve"><![CDATA[Lady]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="152.75390625" y="796.9999999999999"/>
+          <y:Fill color="#C0C0C0" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="30.84765625" x="-0.423828125" xml:space="preserve" y="5.93359375">Lady<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n50">
+      <data key="d3" xml:space="preserve"><![CDATA[Deceased]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[House Lannister]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Kevan Lannister]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="1391.6249999999995" y="308.0"/>
+          <y:Fill color="#FFFF00" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="96.19140625" x="-33.095703125" xml:space="preserve" y="5.93359375">Kevan Lannister<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n51">
+      <data key="d3" xml:space="preserve"><![CDATA[Deceased]]></data>
+      <data key="d4" xml:space="preserve"/>
+      <data key="d5" xml:space="preserve"><![CDATA[Lancel Lannister]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="1249.7700195312495" y="572.0"/>
+          <y:Fill color="#C0C0C0" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="98.16015625" x="-34.080078125" xml:space="preserve" y="5.93359375">Lancel Lannister<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n52">
+      <data key="d3" xml:space="preserve"><![CDATA[Deceased]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[House Lannister]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Tywin Lannister]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="40.0" width="40.0" x="50.32424999999999" y="359.0"/>
+          <y:Fill color="#FFFF00" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="95.40625" x="-27.703125" xml:space="preserve" y="10.93359375">Tywin Lannister<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n53">
+      <data key="d3" xml:space="preserve"><![CDATA[Deceased]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[House Martell]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Elia Martell]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"><![CDATA[House Targaryen]]></data>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="25.0" width="25.0" x="1097.5937499999995" y="517.0"/>
+          <y:Fill color="#666666" transparent="false"/>
+          <y:BorderStyle color="#FF6666" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="67.849609375" x="-21.4248046875" xml:space="preserve" y="3.43359375">Elia Martell<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n54">
+      <data key="d3" xml:space="preserve"><![CDATA[Deceased]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[House Martell]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Oberyn Martell]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="1537.1308593749995" y="572.0"/>
+          <y:Fill color="#666666" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="89.96875" x="-29.984375" xml:space="preserve" y="5.93359375">Oberyn Martell<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n55">
+      <data key="d3" xml:space="preserve"><![CDATA[Deceased]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[House Mormont]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Jeor Mormont]]></data>
+      <data key="d6" xml:space="preserve"><![CDATA[Night's Watch]]></data>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="1391.6249999999995" y="514.5"/>
+          <y:Fill color="#FFFFCC" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="83.623046875" x="-26.8115234375" xml:space="preserve" y="5.93359375">Jeor Mormont<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n56">
+      <data key="d3" xml:space="preserve"><![CDATA[Deceased]]></data>
+      <data key="d4" xml:space="preserve"/>
+      <data key="d5" xml:space="preserve"><![CDATA[Olly]]></data>
+      <data key="d6" xml:space="preserve"><![CDATA[Night's Watch]]></data>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="1537.1308593749995" y="622.0"/>
+          <y:Fill color="#C0C0C0" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="26.529296875" x="1.7353515625" xml:space="preserve" y="5.93359375">Olly<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n57">
+      <data key="d3" xml:space="preserve"><![CDATA[Deceased]]></data>
+      <data key="d4" xml:space="preserve"/>
+      <data key="d5" xml:space="preserve"><![CDATA[Osha]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="525.432890625" y="116.99999999999994"/>
+          <y:Fill color="#C0C0C0" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="33.513671875" x="-1.7568359375" xml:space="preserve" y="5.93359375">Osha<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n58">
+      <data key="d3" xml:space="preserve"><![CDATA[Deceased]]></data>
+      <data key="d4" xml:space="preserve"/>
+      <data key="d5" xml:space="preserve"><![CDATA[Mance Rayder]]></data>
+      <data key="d6" xml:space="preserve"><![CDATA[Free Folk]]></data>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="1095.0937499999995" y="572.0"/>
+          <y:Fill color="#C0C0C0" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="84.671875" x="-27.3359375" xml:space="preserve" y="5.93359375">Mance Rayder<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n59">
+      <data key="d3" xml:space="preserve"><![CDATA[Deceased]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[House Reed]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Jojen Reed]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="530.162109375" y="796.9999999999999"/>
+          <y:Fill color="#00FFFF" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="65.1953125" x="-17.59765625" xml:space="preserve" y="5.93359375">Jojen Reed<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n60">
+      <data key="d3" xml:space="preserve"><![CDATA[Deceased]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[Sand Snakes]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Nymeria Sand]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="1537.1308593749995" y="514.5"/>
+          <y:Fill color="#CCFFFF" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="83.916015625" x="-26.9580078125" xml:space="preserve" y="5.93359375">Nymeria Sand<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n61">
+      <data key="d3" xml:space="preserve"><![CDATA[Deceased]]></data>
+      <data key="d4" xml:space="preserve"/>
+      <data key="d5" xml:space="preserve"><![CDATA[Obara Sand]]></data>
+      <data key="d6" xml:space="preserve"><![CDATA[Sand Snakes]]></data>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="1095.0937499999995" y="622.0"/>
+          <y:Fill color="#C0C0C0" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="70.92578125" x="-20.462890625" xml:space="preserve" y="5.93359375">Obara Sand<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n62">
+      <data key="d3" xml:space="preserve"><![CDATA[Deceased]]></data>
+      <data key="d4" xml:space="preserve"/>
+      <data key="d5" xml:space="preserve"><![CDATA[Tyene Sand]]></data>
+      <data key="d6" xml:space="preserve"><![CDATA[Sand Snakes]]></data>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="1095.0937499999995" y="672.0"/>
+          <y:Fill color="#C0C0C0" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="70.5625" x="-20.28125" xml:space="preserve" y="5.93359375">Tyene Sand<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n63">
+      <data key="d3" xml:space="preserve"><![CDATA[Deceased]]></data>
+      <data key="d4" xml:space="preserve"/>
+      <data key="d5" xml:space="preserve"><![CDATA[Shae]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="1249.7700195312495" y="672.0"/>
+          <y:Fill color="#C0C0C0" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="31.22265625" x="-0.611328125" xml:space="preserve" y="5.93359375">Shae<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n64">
+      <data key="d3" xml:space="preserve"><![CDATA[Deceased]]></data>
+      <data key="d4" xml:space="preserve"/>
+      <data key="d5" xml:space="preserve"><![CDATA[Shaggydog]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="33.630859375" y="796.9999999999999"/>
+          <y:Fill color="#C0C0C0" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="68.177734375" x="-19.0888671875" xml:space="preserve" y="5.93359375">Shaggydog<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n65">
+      <data key="d3" xml:space="preserve"><![CDATA[Deceased]]></data>
+      <data key="d4" xml:space="preserve"/>
+      <data key="d5" xml:space="preserve"><![CDATA[Benjen Stark]]></data>
+      <data key="d6" xml:space="preserve"><![CDATA[House Stark]]></data>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="1249.7700195312495" y="622.0"/>
+          <y:Fill color="#C0C0C0" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="76.1171875" x="-23.05859375" xml:space="preserve" y="5.93359375">Benjen Stark<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n66">
+      <data key="d3" xml:space="preserve"><![CDATA[Deceased]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[House Tully]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Catelyn Stark]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"><![CDATA[House Stark]]></data>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="20.0" width="20.0" x="60.32424999999999" y="-1.0"/>
+          <y:Fill color="#FF9900" transparent="false"/>
+          <y:BorderStyle color="#FF66FF" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="80.587890625" x="-30.2939453125" xml:space="preserve" y="0.93359375">Catelyn Stark<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n67">
+      <data key="d3" xml:space="preserve"><![CDATA[Deceased]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[House Stark]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Eddard Stark]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="50.0" width="50.0" x="602.472890625" y="-1.0"/>
+          <y:Fill color="#FF00FF" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="77.998046875" x="-13.9990234375" xml:space="preserve" y="15.93359375">Eddard Stark<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n68">
+      <data key="d3" xml:space="preserve"><![CDATA[Deceased]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[House Stark]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Lyanna Stark]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"><![CDATA[House Targaryen]]></data>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="25.0" width="25.0" x="1105.5634765624995" y="361.5"/>
+          <y:Fill color="#FF00FF" transparent="false"/>
+          <y:BorderStyle color="#FF6666" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="78.115234375" x="-26.5576171875" xml:space="preserve" y="3.43359375">Lyanna Stark<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n69">
+      <data key="d3" xml:space="preserve"><![CDATA[Deceased]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[House Stark]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Rickard Stark]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="1249.7700195312495" y="361.5"/>
+          <y:Fill color="#FF00FF" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="80.60546875" x="-25.302734375" xml:space="preserve" y="5.93359375">Rickard Stark<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n70">
+      <data key="d3" xml:space="preserve"><![CDATA[Deceased]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[House Stark]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Rickon Stark]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="40.0" width="40.0" x="28.630859375" y="866.9999999999999"/>
+          <y:Fill color="#FF00FF" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="76.333984375" x="-18.1669921875" xml:space="preserve" y="10.93359375">Rickon Stark<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n71">
+      <data key="d3" xml:space="preserve"><![CDATA[Deceased]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[House Stark]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Robb Stark]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="40.0" width="40.0" x="263.1455078125" y="866.9999999999999"/>
+          <y:Fill color="#FF00FF" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="67.36328125" x="-13.681640625" xml:space="preserve" y="10.93359375">Robb Stark<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n72">
+      <data key="d3" xml:space="preserve"><![CDATA[Deceased]]></data>
+      <data key="d4" xml:space="preserve"/>
+      <data key="d5" xml:space="preserve"><![CDATA[Summer]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="465.162109375" y="796.9999999999999"/>
+          <y:Fill color="#C0C0C0" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="51.912109375" x="-10.9560546875" xml:space="preserve" y="5.93359375">Summer<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n73">
+      <data key="d3" xml:space="preserve"><![CDATA[Deceased]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[House Thorne]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Alliser Thorne]]></data>
+      <data key="d6" xml:space="preserve"><![CDATA[Night's Watch]]></data>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="1098.0634765624995" y="463.5"/>
+          <y:Fill color="#993366" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="85.64453125" x="-27.822265625" xml:space="preserve" y="5.93359375">Alliser Thorne<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n74">
+      <data key="d3" xml:space="preserve"><![CDATA[Uncertain]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[House Dondarrion]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Beric Dondarrion]]></data>
+      <data key="d6" xml:space="preserve"><![CDATA[Brotherhood Without Banners]]></data>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="1391.6249999999995" y="572.0"/>
+          <y:Fill color="#C0C0C0" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="102.00390625" x="-36.001953125" xml:space="preserve" y="5.93359375">Beric Dondarrion<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="diamond"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n75">
+      <data key="d3" xml:space="preserve"><![CDATA[Alive]]></data>
+      <data key="d4" xml:space="preserve"/>
+      <data key="d5" xml:space="preserve"><![CDATA[Tormund]]></data>
+      <data key="d6" xml:space="preserve"><![CDATA[Free Folk]]></data>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="453.71624999999995" y="707.0"/>
+          <y:Fill color="#C0C0C0" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="57.51953125" x="-13.759765625" xml:space="preserve" y="5.93359375">Tormund<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="ellipse"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n76">
+      <data key="d3" xml:space="preserve"><![CDATA[Deceased]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[House Targaryen]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Rhaegar Targaryen]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="40.0" width="40.0" x="50.32424999999999" y="129.0"/>
+          <y:Fill color="#FF0000" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="113.7109375" x="-36.85546875" xml:space="preserve" y="10.93359375">Rhaegar Targaryen<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n77">
+      <data key="d3" xml:space="preserve"><![CDATA[Deceased]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[House Targaryen]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Aerys II Targaryen]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="1103.0634765624995" y="308.0"/>
+          <y:Fill color="#FF0000" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="109.31640625" x="-39.658203125" xml:space="preserve" y="5.93359375">Aerys II Targaryen<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n78">
+      <data key="d3" xml:space="preserve"><![CDATA[Deceased]]></data>
+      <data key="d4" xml:space="preserve"/>
+      <data key="d5" xml:space="preserve"><![CDATA[Viserion]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="661.3794335937499" y="505.0"/>
+          <y:Fill color="#C0C0C0" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="51.314453125" x="-10.6572265625" xml:space="preserve" y="5.93359375">Viserion<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n79">
+      <data key="d3" xml:space="preserve"><![CDATA[Deceased]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[House Baratheon]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Renly Baratheon]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="1534.6308593749995" y="254.5"/>
+          <y:Fill color="#0000FF" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="97.76171875" x="-33.880859375" xml:space="preserve" y="5.93359375">Renly Baratheon<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n80">
+      <data key="d3" xml:space="preserve"><![CDATA[Alive]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[House Stark]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Brandon Stark]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="1391.6249999999995" y="361.5"/>
+          <y:Fill color="#FF00FF" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="85.556640625" x="-27.7783203125" xml:space="preserve" y="5.93359375">Brandon Stark<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="ellipse"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n81">
+      <data key="d3" xml:space="preserve"><![CDATA[Deceased]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[House Tyrell]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Margaery Tyrell]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"><![CDATA[House Baratheon]]></data>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="25.0" width="25.0" x="1394.1249999999995" y="466.0"/>
+          <y:Fill color="#C0C0C0" transparent="false"/>
+          <y:BorderStyle color="#3366FF" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="94.03515625" x="-34.517578125" xml:space="preserve" y="3.43359375">Margaery Tyrell<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n82">
+      <data key="d3" xml:space="preserve"><![CDATA[Deceased]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[House Targaryen]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Rhaella Targaryen]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"/>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="1248.6191406249995" y="308.0"/>
+          <y:Fill color="#FF0000" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="108.255859375" x="-39.1279296875" xml:space="preserve" y="5.93359375">Rhaella Targaryen<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n83">
+      <data key="d3" xml:space="preserve"><![CDATA[Deceased]]></data>
+      <data key="d4" xml:space="preserve"><![CDATA[House Redwyne]]></data>
+      <data key="d5" xml:space="preserve"><![CDATA[Olenna Tyrell]]></data>
+      <data key="d6" xml:space="preserve"/>
+      <data key="d7" xml:space="preserve"><![CDATA[House Tyrell]]></data>
+      <data key="d10">
+        <y:ShapeNode>
+          <y:Geometry height="30.0" width="30.0" x="-18.09175000000002" y="505.0"/>
+          <y:Fill color="#C0C0C0" transparent="false"/>
+          <y:BorderStyle hasColor="false" raised="false" type="line" width="5.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="81.185546875" x="-25.5927734375" xml:space="preserve" y="5.93359375">Olenna Tyrell<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <edge id="e0" source="n3" target="n29">
+      <data key="d12" xml:space="preserve"><![CDATA[allegiance]]></data>
+      <data key="d13" xml:space="preserve"><![CDATA[dragon]]></data>
+      <data key="d16">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#C0C0C0" type="line" width="7.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e1" source="n78" target="n29">
+      <data key="d12" xml:space="preserve"><![CDATA[allegiance]]></data>
+      <data key="d13" xml:space="preserve"><![CDATA[dragon]]></data>
+      <data key="d16">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#C0C0C0" type="line" width="7.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e2" source="n4" target="n11">
+      <data key="d12" xml:space="preserve"><![CDATA[allegiance]]></data>
+      <data key="d13" xml:space="preserve"><![CDATA[pledge]]></data>
+      <data key="d16">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#0000FF" type="line" width="7.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e3" source="n5" target="n11">
+      <data key="d12" xml:space="preserve"><![CDATA[allegiance]]></data>
+      <data key="d13" xml:space="preserve"><![CDATA[direwolf]]></data>
+      <data key="d16">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#C0C0C0" type="line" width="7.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e4" source="n9" target="n10">
+      <data key="d12" xml:space="preserve"><![CDATA[allegiance]]></data>
+      <data key="d13" xml:space="preserve"><![CDATA[pledge]]></data>
+      <data key="d16">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#00FF00" type="line" width="7.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e5" source="n10" target="n29">
+      <data key="d12" xml:space="preserve"><![CDATA[allegiance]]></data>
+      <data key="d13" xml:space="preserve"><![CDATA[pledge]]></data>
+      <data key="d16">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#00FF00" type="line" width="7.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e6" source="n15" target="n11">
+      <data key="d12" xml:space="preserve"><![CDATA[allegiance]]></data>
+      <data key="d13" xml:space="preserve"><![CDATA[pledge]]></data>
+      <data key="d16">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#C0C0C0" type="line" width="7.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e7" source="n15" target="n29">
+      <data key="d12" xml:space="preserve"><![CDATA[allegiance]]></data>
+      <data key="d13" xml:space="preserve"><![CDATA[pledge]]></data>
+      <data key="d16">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#C0C0C0" type="line" width="7.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e8" source="n19" target="n26">
+      <data key="d12" xml:space="preserve"><![CDATA[allegiance]]></data>
+      <data key="d13" xml:space="preserve"><![CDATA[direwolf]]></data>
+      <data key="d16">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#C0C0C0" type="line" width="7.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e9" source="n21" target="n30">
+      <data key="d12" xml:space="preserve"><![CDATA[allegiance]]></data>
+      <data key="d13" xml:space="preserve"><![CDATA[pledge]]></data>
+      <data key="d16">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#9999FF" type="line" width="7.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e10" source="n24" target="n29">
+      <data key="d12" xml:space="preserve"><![CDATA[allegiance]]></data>
+      <data key="d13" xml:space="preserve"><![CDATA[dragon]]></data>
+      <data key="d16">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#C0C0C0" type="line" width="7.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e11" source="n47" target="n71">
+      <data key="d12" xml:space="preserve"><![CDATA[allegiance]]></data>
+      <data key="d13" xml:space="preserve"><![CDATA[direwolf]]></data>
+      <data key="d16">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#C0C0C0" type="line" width="7.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e12" source="n49" target="n28">
+      <data key="d12" xml:space="preserve"><![CDATA[allegiance]]></data>
+      <data key="d13" xml:space="preserve"><![CDATA[direwolf]]></data>
+      <data key="d16">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#C0C0C0" type="line" width="7.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e13" source="n64" target="n70">
+      <data key="d12" xml:space="preserve"><![CDATA[allegiance]]></data>
+      <data key="d13" xml:space="preserve"><![CDATA[direwolf]]></data>
+      <data key="d16">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#C0C0C0" type="line" width="7.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e14" source="n72" target="n27">
+      <data key="d12" xml:space="preserve"><![CDATA[allegiance]]></data>
+      <data key="d13" xml:space="preserve"><![CDATA[direwolf]]></data>
+      <data key="d16">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#C0C0C0" type="line" width="7.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e15" source="n75" target="n11">
+      <data key="d12" xml:space="preserve"><![CDATA[allegiance]]></data>
+      <data key="d13" xml:space="preserve"><![CDATA[pledge]]></data>
+      <data key="d16">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#C0C0C0" type="line" width="7.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e16" source="n22" target="n67">
+      <data key="d12" xml:space="preserve"><![CDATA[allegiance]]></data>
+      <data key="d13" xml:space="preserve"><![CDATA[pledge]]></data>
+      <data key="d16">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#00FFFF" type="line" width="7.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e17" source="n17" target="n29">
+      <data key="d12" xml:space="preserve"><![CDATA[allegiance]]></data>
+      <data key="d13" xml:space="preserve"><![CDATA[pledge]]></data>
+      <data key="d16">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#FFFFCC" type="line" width="7.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e18" source="n16" target="n29">
+      <data key="d12" xml:space="preserve"><![CDATA[allegiance]]></data>
+      <data key="d13" xml:space="preserve"><![CDATA[pledge]]></data>
+      <data key="d16">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#C0C0C0" type="line" width="7.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e19" source="n6" target="n29">
+      <data key="d12" xml:space="preserve"><![CDATA[allegiance]]></data>
+      <data key="d13" xml:space="preserve"><![CDATA[oath]]></data>
+      <data key="d16">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#C0C0C0" type="line" width="7.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e20" source="n1" target="n37">
+      <data key="d12" xml:space="preserve"><![CDATA[allegiance]]></data>
+      <data key="d13" xml:space="preserve"><![CDATA[kingsguard]]></data>
+      <data key="d16">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#339966" type="line" width="7.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e21" source="n1" target="n35">
+      <data key="d12" xml:space="preserve"><![CDATA[allegiance]]></data>
+      <data key="d13" xml:space="preserve"><![CDATA[kingsguard]]></data>
+      <data key="d16">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#339966" type="line" width="7.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e22" source="n1" target="n40">
+      <data key="d12" xml:space="preserve"><![CDATA[allegiance]]></data>
+      <data key="d13" xml:space="preserve"><![CDATA[kingsguard]]></data>
+      <data key="d16">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#339966" type="line" width="7.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e23" source="n1" target="n12">
+      <data key="d12" xml:space="preserve"><![CDATA[allegiance]]></data>
+      <data key="d13" xml:space="preserve"><![CDATA[queensquard]]></data>
+      <data key="d16">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#339966" type="line" width="7.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e24" source="n2" target="n37">
+      <data key="d12" xml:space="preserve"><![CDATA[allegiance]]></data>
+      <data key="d13" xml:space="preserve"><![CDATA[kingsguard]]></data>
+      <data key="d16">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#339966" type="line" width="7.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e25" source="n2" target="n35">
+      <data key="d12" xml:space="preserve"><![CDATA[allegiance]]></data>
+      <data key="d13" xml:space="preserve"><![CDATA[kingsguard]]></data>
+      <data key="d16">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#339966" type="line" width="7.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e26" source="n14" target="n29">
+      <data key="d12" xml:space="preserve"><![CDATA[allegiance]]></data>
+      <data key="d13" xml:space="preserve"><![CDATA[hand]]></data>
+      <data key="d16">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#FFFF00" type="line" width="7.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e27" source="n67" target="n37">
+      <data key="d12" xml:space="preserve"><![CDATA[allegiance]]></data>
+      <data key="d13" xml:space="preserve"><![CDATA[hand]]></data>
+      <data key="d16">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#FF00FF" type="line" width="7.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e28" source="n20" target="n37">
+      <data key="d12" xml:space="preserve"><![CDATA[allegiance]]></data>
+      <data key="d13" xml:space="preserve"><![CDATA[pledge]]></data>
+      <data key="d16">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#9999FF" type="line" width="7.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e29" source="n20" target="n35">
+      <data key="d12" xml:space="preserve"><![CDATA[allegiance]]></data>
+      <data key="d13" xml:space="preserve"><![CDATA[pledge]]></data>
+      <data key="d16">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="-15.021666416638567" ty="-29.9834944311134"/>
+          <y:LineStyle color="#9999FF" type="line" width="7.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e30" source="n23" target="n27">
+      <data key="d12" xml:space="preserve"><![CDATA[allegiance]]></data>
+      <data key="d13" xml:space="preserve"><![CDATA[pledge]]></data>
+      <data key="d16">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#00FFFF" type="line" width="7.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e31" source="n59" target="n27">
+      <data key="d12" xml:space="preserve"><![CDATA[allegiance]]></data>
+      <data key="d13" xml:space="preserve"><![CDATA[pledge]]></data>
+      <data key="d16">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#00FFFF" type="line" width="7.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e32" source="n25" target="n29">
+      <data key="d12" xml:space="preserve"><![CDATA[allegiance]]></data>
+      <data key="d13" xml:space="preserve"><![CDATA[pledge]]></data>
+      <data key="d16">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#CCFFFF" type="line" width="7.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e33" source="n30" target="n66">
+      <data key="d12" xml:space="preserve"><![CDATA[allegiance]]></data>
+      <data key="d13" xml:space="preserve"><![CDATA[oath]]></data>
+      <data key="d16">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#FF9999" type="line" width="7.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e34" source="n32" target="n37">
+      <data key="d12" xml:space="preserve"><![CDATA[allegiance]]></data>
+      <data key="d13" xml:space="preserve"><![CDATA[hand]]></data>
+      <data key="d16">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#3366FF" type="line" width="7.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e35" source="n43" target="n76">
+      <data key="d12" xml:space="preserve"><![CDATA[allegiance]]></data>
+      <data key="d13" xml:space="preserve"><![CDATA[hand]]></data>
+      <data key="d16">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#CCFFFF" type="line" width="7.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e36" source="n42" target="n45">
+      <data key="d12" xml:space="preserve"><![CDATA[allegiance]]></data>
+      <data key="d13" xml:space="preserve"><![CDATA[pledge]]></data>
+      <data key="d16">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#CCFFCC" type="line" width="7.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e37" source="n45" target="n52">
+      <data key="d12" xml:space="preserve"><![CDATA[allegiance]]></data>
+      <data key="d13" xml:space="preserve"><![CDATA[pledge]]></data>
+      <data key="d16">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#CCCCFF" type="line" width="7.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e38" source="n46" target="n12">
+      <data key="d12" xml:space="preserve"><![CDATA[allegiance]]></data>
+      <data key="d13" xml:space="preserve"><![CDATA[pledge]]></data>
+      <data key="d16">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#00FF00" type="line" width="7.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e39" source="n57" target="n67">
+      <data key="d12" xml:space="preserve"><![CDATA[allegiance]]></data>
+      <data key="d13" xml:space="preserve"><![CDATA[pledge]]></data>
+      <data key="d16">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#C0C0C0" type="line" width="7.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e40" source="n9" target="n67">
+      <data key="d12" xml:space="preserve"><![CDATA[allegiance]]></data>
+      <data key="d13" xml:space="preserve"><![CDATA[ward]]></data>
+      <data key="d16">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#00FF00" type="line" width="7.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:EdgeLabel alignment="center" anchorX="-0.268008162856745" anchorY="-162.53950376578499" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" upX="0.7709250596320961" upY="0.6369258610162168" verticalTextPosition="bottom" visible="true" width="4.0" x="-2.8157116069216124" y="-162.53950376578499">
+            <y:LabelModel>
+              <y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartEdgeLabelModelParameter angle="8.54448570099067" distance="10.0" distanceToCenter="false" position="center" ratio="0.8766096538854115" segment="-1"/>
+            </y:ModelParameter>
+            <y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/>
+          </y:EdgeLabel>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e41" source="n83" target="n29">
+      <data key="d12" xml:space="preserve"><![CDATA[allegiance]]></data>
+      <data key="d13" xml:space="preserve"><![CDATA[pledge]]></data>
+      <data key="d16">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#C0C0C0" type="line" width="7.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e42" source="n78" target="n18">
+      <data key="d12" xml:space="preserve"><![CDATA[allegiance]]></data>
+      <data key="d13" xml:space="preserve"><![CDATA[dragon]]></data>
+      <data key="d16">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#C0C0C0" type="line" width="7.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+  </graph>
+  <data key="d11">
+    <y:Resources/>
+  </data>
+</graphml>

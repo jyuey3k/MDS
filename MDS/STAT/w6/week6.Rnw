@@ -305,26 +305,69 @@ The last coclumn contains class lavels with "1" being malignant and "0" as benig
 \item Download the breast dataset file from the course webpage
 \begin{solution}
 We first import the dataset
-<<tidy=TRUE>>=
+<<>>=
+source("functions_w6.R")
+library(MASS)
+library(mlbench)
+library(class)
 breast <- read.table("breast.txt", sep ="\t", header = TRUE)
 df <- data.frame(breast)
 Column.names <- c("Clump_Thickness", "Uniformity_Size", "Uniformity_Shape", 
 "Marginal_Adhesion", "Single_Ep_Size", "Bare_Nuclei", "Bland_Chromatin", 
-"Normal_Nucleoli", "Mitoses")
+"Normal_Nucleoli", "Mitoses", "Class")
 colnames(df) <- Column.names
-
+dim(df)
 @
 \end{solution}
 \item Design a 10-fold cross validation procedure to evaluate logistic regression and $k$-NN $k=3$ classification accuracy.
 \begin{solution}
+<<>>=
+library(caret)
+set.seed(1)
+fold <- createFolds(df$Class, k=10)
+knn.TP <- knn.TN <- knn.FP <- knn.FN <- c()
+logit.TP <- logit.TN <- logit.FP <- logit.FN <- c()
+df$Class <- as.factor(df$Class)
+
+for(i in 1:length(fold)){
+  truth <- df$Class[fold[[i]]]
+ 
+  
+  
+logit.model <-train(Class~. ,data=df[-fold[[i]],], method = "glm")
+preds <- predict(logit.model, newdata=df[fold[[i]],-10])
+logit.TP <- c(logit.TP, sum((truth == preds)[truth == "0"]))
+logit.TN <- c(logit.TN, sum((truth == preds)[truth == "1"]))
+logit.FP <- c(logit.FP, sum((truth != preds)[truth == "1"]))
+logit.FN <- c(logit.FN, sum((truth != preds)[truth == "0"]))  
+  
+  
+  
+  
+  
+preds <- knn(df[-fold[[i]],-10], df[fold[[i]],-10], df$Class[-fold[[i]]], k=3)
+    knn.TP <- c(knn.TP, sum((truth == preds)[truth == "0"]))
+    knn.TN <- c(knn.TN, sum((truth == preds)[truth == "1"]))
+    knn.FP <- c(knn.FP, sum((truth != preds)[truth == "1"]))
+    knn.FN <- c(knn.FN, sum((truth != preds)[truth == "0"]))  
+  
+}
+evaluate(knn.TN, knn.FP, knn.TP, knn.FN)
+evaluate(logit.TN, logit.FP, logit.TP, logit.FN)
+
+
+@
 
 \end{solution}
 \item Calcuate TP, TN, FP, FN and compute sensitivity and specificity for each classifier
+\begin{solution}
+See above
 
+\end{solution}
 \item Compute F1 scare and compare the two classifiers. 
+\begin{solution}
+See above, we can see that the F1 score is the same above with only the sensitivity and sepicificity being fundamentally different. According to such metrics it is hard to compare as to wheter the classification is better in either scenarios, althouth we can see marginally that the knn method is better at looking at the rates of benign, whereas the logreg method is better looking at the malignant
+\end{solution}
 \end{enumerate}
-<<>>=
-
-@
 
 \end{document}
